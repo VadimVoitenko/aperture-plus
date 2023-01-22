@@ -1,9 +1,8 @@
 // Header
-// Header
 
 // Navbar
 nav {
-    background-color: rgba(0, 119, 134, 0.651);
+    background-color: $headerColor;
     overflow: hidden;
 }
 
@@ -11,13 +10,13 @@ nav {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 34px;
+    padding-bottom: 25px;
 }
 
 .logo {
     a {
-        color: white;
+        color: $whiteColor;
     }
 }
 
@@ -26,12 +25,25 @@ nav {
 
     // .menu__item
     &__item {
-        margin-left: 25px;
+        margin-left: 32px;
     }
 
     // .menu__item-link
     &__item-link {
-        color: white;
+        color: $whiteColor;
+        font-size: 14px;
+    }
+
+    // .menu__btn
+    &__btn {
+        color: $blackColor;
+        background: $whiteColor;
+        font-size: 16px;
+        letter-spacing: 0.4px;
+        border-radius: 14px;
+        padding: 9px 20px;
+        transition: 1.5s;
+        border: 1px solid $whiteColor;
     }
 }
 
@@ -42,10 +54,11 @@ nav {
 
 // Burger menu styles
 @media screen and (max-width: $burgerBreakpoint) {
+
     // .menu
     .menu {
         position: fixed;
-        background: #131418;
+        background: $headerColor;
         left: 0;
         top: 0;
         height: 100vh;
@@ -102,7 +115,7 @@ nav {
             position: absolute;
             height: 2px;
             width: 100%;
-            background: $burgerColor;
+            background: $whiteColor;
             transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
         }
 
@@ -119,7 +132,7 @@ nav {
             top: 9px;
             right: 0;
             width: 100%;
-            background: $burgerColor;
+            background: $whiteColor;
             height: 2px;
             transform: scale(1);
             transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
@@ -128,11 +141,20 @@ nav {
 
     // .menu__item
     .menu__item {
-        margin-top: 15px;
+        margin-top: 45px;
     }
 
     // .menu__link
     .menu__item-link {
-        color: white;
+        color: $whiteColor;
+        font-size: 22px;
+    }
+
+    // .menu__btn
+    .menu__btn {
+        color: $blackColor;
+        font-size: 22px;
+        border-radius: 14px;
+        padding: 9px 20px;
     }
 }

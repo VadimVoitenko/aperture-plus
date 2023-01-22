@@ -21,6 +21,8 @@ section {
 }
 
 body {
+    font-family: $fontSecondary, $fontMain;
+    font-weight: 400;
     line-height: 1;
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;

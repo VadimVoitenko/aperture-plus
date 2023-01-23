@@ -60,12 +60,31 @@ img {
     max-width: 100%;
 }
 
+//Custom p, span, h1-6
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    font-weight: inherit;
+    font-family: $fontSecondary, $fontMain;
+    // font-style: normal;
+    font-weight: 400;
     font-size: inherit;
+    color: $whiteColor;
+}
+
+p {
+    font-family: $fontSecondary, $fontMain;
+    font-weight: 400;
+    // font-style: normal;
+    line-height: 20px;
+    font-size: 14px;
+    color: $grayColor;
+}
+
+span {
+    font-family: $fontSecondary, $fontMain;
+    color: $grayColor;
 }

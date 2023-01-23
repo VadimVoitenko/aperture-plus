@@ -1,0 +1,79 @@
+// Banner Section
+
+.banner__content {
+    background-image: url(../img/banner.png);
+    background-position: center;
+    background-size: cover;
+    // height: 100vh;
+    height: 716px;
+    position: relative;
+
+    &-inner {
+        position: absolute;
+        bottom: 13px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &-notice {
+        display: block;
+        margin-bottom: 1px;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 2px;
+        line-height: 20px;
+        text-transform: uppercase;
+    }
+
+    &-title {
+        margin-bottom: 18px;
+        text-align: center;
+        font-size: 54px;
+        line-height: 59.4px;
+    }
+
+    &-text {
+        max-width: 580px;
+        text-align: center;
+        margin-bottom: 71px;
+    }
+}
+
+.addinfo {
+    // text-align: right;
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+
+    @media screen and(max-width: $breakpoint768) {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.addinfo__list {
+
+    // text-align: right;
+    li {
+        // float: left;
+        display: inline-block;
+    }
+
+    &-item {
+        margin-left: 16px;
+    }
+}
+
+.addinfo__item {
+    &-icon {
+        // display: block;
+        float: left;
+        margin-top: 5px;
+    }
+
+    &-text {
+        float: right;
+        margin-left: 6.5px;
+    }
+}

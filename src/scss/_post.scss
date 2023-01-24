@@ -1,0 +1,66 @@
+// Post Section
+
+.post {
+    position: relative;
+}
+
+.post img {
+    background-position: center;
+    background-size: cover;
+    max-height: 600px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.post__content {
+    &-info {
+        position: absolute;
+        top: 44%;
+        right: 0%;
+        padding-right: 62px;
+    }
+
+    &-title {
+        letter-spacing: 2px;
+        text-align: left;
+        color: $whiteColor;
+        text-transform: uppercase;
+    }
+
+    &-text {
+        max-width: 355px;
+        letter-spacing: 2px;
+        text-align: left;
+    }
+}
+
+.composition__list-post {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+
+    li {
+        display: inline-block;
+    }
+
+    &-item {
+        margin-left: 16px;
+    }
+
+    @media screen and (max-width: $breakpoint992) {
+        text-align: center;
+    }
+}
+
+.composition__item {
+    &-icon {
+        float: left;
+        margin-top: 5px;
+    }
+
+    &-text {
+        float: right;
+        margin-left: 6.5px;
+    }
+}

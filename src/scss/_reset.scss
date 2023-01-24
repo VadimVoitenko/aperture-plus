@@ -69,10 +69,11 @@ h4,
 h5,
 h6 {
     font-family: $fontSecondary, $fontMain;
-    // font-style: normal;
+    font-style: normal;
     font-weight: 400;
     font-size: inherit;
     color: $whiteColor;
+    text-align: center;
 }
 
 p {
@@ -82,6 +83,7 @@ p {
     line-height: 20px;
     font-size: 14px;
     color: $grayColor;
+    text-align: center;
 }
 
 span {

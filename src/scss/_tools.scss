@@ -1,0 +1,73 @@
+// Tools Section
+.tools {}
+
+.tools__content {
+    &-parts {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(50%, 2fr));
+
+        @media screen and (max-width: $breakpoint992) {
+            grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+        }
+    }
+
+    &-info {
+        background: $blackColor;
+        padding: 173px 106px 153px 100px;
+
+        & span {
+            display: block;
+            margin-bottom: 6px;
+            font-size: 14px;
+            letter-spacing: 2px;
+            line-height: 20px;
+            text-transform: uppercase;
+
+        }
+
+        & img {
+            position: relative;
+        }
+    }
+
+    &-title {
+        font-size: 28px;
+        text-align: left;
+        margin-bottom: 14px;
+    }
+
+    &-description {
+        text-align: left;
+        color: $whiteColor;
+        margin-bottom: 20px;
+    }
+
+    &-img img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+
+        // @media screen and (max-width: $breakpoint992) {
+
+        //     display: block;
+        //     margin-left: auto;
+        //     margin-right: auto;
+        //     width: 80%;
+        // }
+    }
+}
+
+.btn {
+    & span {
+        display: inline-block;
+        text-transform: none;
+        color: $blackColor;
+        letter-spacing: 0.4px;
+    }
+
+    & img {
+        display: inline-block;
+        top: -7px;
+        left: -4px;
+    }
+}

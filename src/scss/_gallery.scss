@@ -36,7 +36,7 @@
     position: relative;
 
     & img {
-        display: inline-block;
+        // display: inline-block;
         position: relative;
     }
 
@@ -67,21 +67,4 @@
         color: $blackColor;
     }
 
-}
-
-.btn {
-    color: $blackColor;
-    background: $whiteColor;
-    font-size: 16px;
-    letter-spacing: .4px;
-    border-radius: 14px;
-    padding: 8px 9px;
-    transition: 1.5s;
-    border: 1px solid $whiteColor;
-
-    & img {
-        display: inline-block;
-        top: -8px;
-        left: -6px;
-    }
 }

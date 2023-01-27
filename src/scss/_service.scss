@@ -1,0 +1,27 @@
+.service {
+    background: $blackColor;
+}
+
+.service__content {
+    padding: 113px 0 108px;
+    text-align: center;
+    position: relative;
+
+    &-title {
+        margin: 0 auto;
+        max-width: 571px;
+        width: 100%;
+        font-size: 40px;
+        line-height: 42px;
+        margin-bottom: 15px;
+    }
+
+    &-notice{
+        font-size: 24px;
+        margin-bottom: 42px;
+    }
+
+    img{
+        position: relative;
+    }
+}

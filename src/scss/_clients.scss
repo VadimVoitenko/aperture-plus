@@ -1,0 +1,43 @@
+// Clients Section
+.clients {
+    background: $blackColor;
+}
+
+.clients__content {
+    max-width: 1360px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 120px 120px 100px 120px;
+    overflow: hidden;
+
+    // &-info {}
+
+    &-title {
+        margin-bottom: 15px;
+        font-size: 40px;
+    }
+
+    &-description {
+        margin-bottom: 42px;
+        font-size: 24px;
+        line-height: 30px;
+
+    }
+}
+
+.swiper-container{
+    // margin: 0 25px;
+}
+
+.swiper-wrapper {
+    align-items: center;
+}
+
+// .image-slider__image{
+//     max-width: 128px;
+//     width: 100%;
+// }
+
+.swiper-slide {
+    text-align: center;
+}

@@ -1,13 +1,13 @@
 /**
- * Swiper 7.3.1
+ * Swiper 8.4.6
  * Most modern mobile touch slider and framework with hardware accelerated transitions
  * https://swiperjs.com
  *
- * Copyright 2014-2021 Vladimir Kharlampidi
+ * Copyright 2014-2023 Vladimir Kharlampidi
  *
  * Released under the MIT License
  *
- * Released on: November 24, 2021
+ * Released on: January 17, 2023
  */
 
 @font-face {
@@ -78,6 +78,12 @@
 .swiper-autoheight .swiper-wrapper {
     align-items: flex-start;
     transition-property: transform, height
+}
+
+.swiper-backface-hidden .swiper-slide {
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden
 }
 
 .swiper-3d,
@@ -179,7 +185,13 @@
 }
 
 .swiper-centered>.swiper-wrapper>.swiper-slide {
-    scroll-snap-align: center center
+    scroll-snap-align: center center;
+    scroll-snap-stop: always
+}
+
+.swiper-virtual .swiper-slide {
+    -webkit-backface-visibility: hidden;
+    transform: translateZ(0)
 }
 
 .swiper-virtual.swiper-css-mode .swiper-wrapper::after {
@@ -226,13 +238,24 @@
     pointer-events: none
 }
 
+.swiper-button-next.swiper-button-hidden,
+.swiper-button-prev.swiper-button-hidden {
+    opacity: 0;
+    cursor: auto;
+    pointer-events: none
+}
+
+.swiper-navigation-disabled .swiper-button-next,
+.swiper-navigation-disabled .swiper-button-prev {
+    display: none !important
+}
+
 .swiper-button-next:after,
 .swiper-button-prev:after {
     font-family: swiper-icons;
     font-size: var(--swiper-navigation-size);
     text-transform: none !important;
     letter-spacing: 0;
-    text-transform: none;
     font-variant: initial;
     line-height: 1
 }
@@ -273,6 +296,11 @@
 
 .swiper-pagination.swiper-pagination-hidden {
     opacity: 0
+}
+
+.swiper-pagination-disabled>.swiper-pagination,
+.swiper-pagination.swiper-pagination-disabled {
+    display: none !important
 }
 
 .swiper-horizontal>.swiper-pagination-bullets,
@@ -447,7 +475,13 @@ button.swiper-pagination-bullet {
     background: rgba(0, 0, 0, .1)
 }
 
-.swiper-horizontal>.swiper-scrollbar {
+.swiper-scrollbar-disabled>.swiper-scrollbar,
+.swiper-scrollbar.swiper-scrollbar-disabled {
+    display: none !important
+}
+
+.swiper-horizontal>.swiper-scrollbar,
+.swiper-scrollbar.swiper-scrollbar-horizontal {
     position: absolute;
     left: 1%;
     bottom: 3px;
@@ -456,6 +490,7 @@ button.swiper-pagination-bullet {
     width: 98%
 }
 
+.swiper-scrollbar.swiper-scrollbar-vertical,
 .swiper-vertical>.swiper-scrollbar {
     position: absolute;
     right: 3px;
@@ -514,11 +549,15 @@ button.swiper-pagination-bullet {
     margin-top: -21px;
     z-index: 10;
     transform-origin: 50%;
-    animation: swiper-preloader-spin 1s infinite linear;
     box-sizing: border-box;
     border: 4px solid var(--swiper-preloader-color, var(--swiper-theme-color));
     border-radius: 50%;
     border-top-color: transparent
+}
+
+.swiper-watch-progress .swiper-slide-visible .swiper-lazy-preloader,
+.swiper:not(.swiper-watch-progress) .swiper-lazy-preloader {
+    animation: swiper-preloader-spin 1s infinite linear
 }
 
 .swiper-lazy-preloader-white {
@@ -530,6 +569,10 @@ button.swiper-pagination-bullet {
 }
 
 @keyframes swiper-preloader-spin {
+    0% {
+        transform: rotate(0deg)
+    }
+
     100% {
         transform: rotate(360deg)
     }

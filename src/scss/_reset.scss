@@ -12,7 +12,7 @@
     box-sizing: border-box;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -35,6 +35,23 @@ body {
 
 input::-ms-clear {
     display: none;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: $blackColor;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $whiteColor;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: $grayColor;
 }
 
 button {

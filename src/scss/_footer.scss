@@ -1,4 +1,127 @@
 // Footer
 footer {
-    display: block;
+    background: $blackColor;
+    // display: block;
+}
+
+.footer__content {
+    padding: 100px 136px;
+}
+
+.footer__menu {
+    display: grid;
+    grid-template-columns: 60% 20% 20%;
+
+    &-logo {
+        margin-bottom: 20px;
+    }
+
+    &-text p {
+        font-size: 13px;
+        text-align: left;
+    }
+
+    &-list {
+        max-height: 200px;
+    }
+}
+
+.footer__list {
+    &-item {
+        margin-bottom: 10px;
+    }
+
+    &-item p {
+        text-align: left;
+        color: $grayColor;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+
+    &-item a {
+        text-align: left;
+        color: $whiteColor;
+        line-height: 20px;
+
+    }
+}
+
+hr {
+    border: none;
+    border-top: 2px solid $whiteColor;
+    color: $whiteColor;
+    overflow: visible;
+    text-align: center;
+    margin-top: 36px;
+}
+
+.footer__subscribe {
+    display: grid;
+    grid-template-columns: 60% 40%;
+
+    &-info {
+        margin-top: 36px;
+        margin-right: auto;
+    }
+
+    &-title {
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+
+    &-description {
+        font-size: 13px;
+        text-align: left;
+    }
+
+    &-form {
+        margin-top: 40px;
+
+        & form {
+            position: relative;
+            max-width: 458px;
+            height: 52px;
+            background: #F9FAFB;
+            border: 1px solid #E5E7EB;
+            border-radius: 12px;
+
+            & input {
+                width: 80%;
+                height: 100%;
+                font-family: $fontSecondary, $fontMain;
+                color: $blackColor;
+                padding: 20px 20px;
+                border-radius: 12px;
+            }
+        }
+
+        & button {
+            position: absolute;
+            top: calc(50% - 30px/2);
+            right: 6px;
+            width: 63px;
+            height: 30px;
+            font-family: $fontSecondary, $fontMain;
+            color: $grayColor;
+            background: $blackColor;
+            border-radius: 11px;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.footer__copyright{
+    margin-top: 56px;
+    display: flex;
+    justify-content: space-between;
+
+    // &-text{}
+
+    &-items{
+        max-width: 112px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
 }

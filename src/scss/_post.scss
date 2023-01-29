@@ -2,33 +2,32 @@
 
 .post {
     position: relative;
-}
 
-.post img {
-    background-position: center;
-    background-size: cover;
-    max-height: 600px;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-.post__content {
-    &-info {
-        position: absolute;
-        top: 44%;
-        right: 0%;
-        padding-right: 62px;
+    & img {
+        background-position: center;
+        background-size: cover;
+        max-height: 600px;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
     }
 
-    &-title {
+    &__info {
+        position: absolute;
+        top: 50%;
+        right: 0px;
+        padding-right: 62px;
+        transform: translateY(-50%);
+    }
+
+    &__title {
         letter-spacing: 2px;
         text-align: left;
         color: $whiteColor;
         text-transform: uppercase;
     }
 
-    &-text {
+    &__text {
         max-width: 355px;
         letter-spacing: 2px;
         text-align: left;
@@ -39,9 +38,13 @@
     position: absolute;
     bottom: 40px;
     right: 40px;
+    max-width: 340px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 
     li {
-        display: inline-block;
+        display: flex;
     }
 
     &-item {

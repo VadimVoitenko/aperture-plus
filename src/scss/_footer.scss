@@ -1,15 +1,17 @@
 // Footer
 footer {
     background: $blackColor;
+
     // display: block;
+    .container {
+        max-width: 1440px;
+        width: 100%;
+    }
+
+
 }
 
-footer .container {
-    max-width: 1440px;
-    width: 100%;
-}
-
-.footer__content {
+footer .footer__content {
     padding: 100px;
 
     @media screen and (max-width: $breakpoint1024) {
@@ -20,7 +22,7 @@ footer .container {
         padding: 40px 58px;
     }
 
-    @media screen and (max-width: $breakpoint500){
+    @media screen and (max-width: $breakpoint640) {
         padding: 10px 15px;
     }
 }
@@ -153,7 +155,7 @@ hr {
                 height: 100%;
                 font-family: $fontSecondary, $fontMain;
                 color: $blackColor;
-                padding: 20px 20px;
+                padding: 20px;
                 border-radius: 12px;
                 transition: .5s ease;
 
@@ -172,7 +174,7 @@ hr {
 
         & button {
             position: absolute;
-            top: calc(50% - 30px/2);
+            top: calc(50% - 15px);
             right: 6px;
             width: 63px;
             height: 30px;

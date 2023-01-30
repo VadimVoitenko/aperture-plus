@@ -4,14 +4,13 @@ $containerWidth: 1200;
 $containerPadding: 40;
 $containerSidePadding: math.div($containerPadding, 2);
 $breakpoint1450: 1449.98 + px;
-//Custom 1100 1024 878 640 500
+//Custom 1100 1024 878 640
 $breakpoint1100: 1099.98+px;
 $breakpoint1024: 1023.98+px;
 $breakpoint992: 991.98 + px;
 $breakpoint878: 877.98 + px;
 $breakpoint768: 767.98 + px;
 $breakpoint640: 639.98 + px;
-$breakpoint500: 499.98 + px;
 $breakpoint480: 479.98 + px;
 
 // Burger Menu
@@ -23,7 +22,7 @@ $burgerActiveColor: 'white';
 $fontMain: sans-serif;
 $fontSecondary: 'Poppins';
 
-// Custeom Colors
+// Custom Colors
 $headerColor: #181818;
 $blackColor: #000000;
 $whiteColor: #FFFFFF;

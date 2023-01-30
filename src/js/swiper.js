@@ -60,7 +60,7 @@ const swiper = new Swiper('.swiper-container', {
     1280: {
       slidesPerView: 5,
       spaceBetween: 150,
-    }
+    },
 
     // Stop autoplay, when mouse on slider
     // on: {
@@ -76,11 +76,11 @@ const swiper = new Swiper('.swiper-container', {
     // },
 
     // Accessibility
-    //   a11y: {
-    //     enabled: true,
-    //     prevSlideMessage: 'Попередній слайд',
-    //     nextSlideMessage: 'Наступний слайд',
-    //     notificationClass: 'swiper-notification',
-    //   },
+    a11y: {
+      enabled: true,
+      prevSlideMessage: 'Попередній слайд',
+      nextSlideMessage: 'Наступний слайд',
+      notificationClass: 'swiper-notification',
+    },
   },
 });

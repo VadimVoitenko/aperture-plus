@@ -1,37 +1,31 @@
 // Banner Section
 
 .banner {
+    position: relative;
+    height: calc(100vh - 90px);
     background-image: url(../img/banner.png);
     background-position: center;
     background-size: cover;
-    height: calc(100vh - 90px);
-    position: relative;
 
-    // .banner__content
     &__content {
         position: absolute;
-        bottom: 13px;
+        bottom: 0;
         left: 50%;
         max-width: 1360px;
-        padding: 0 20px;
         width: 100%;
         text-align: center;
         transform: translateX(-50%);
 
         &-notice {
             display: block;
-            margin-bottom: 1px;
             font-size: 14px;
-            font-weight: 400;
             letter-spacing: 2px;
-            line-height: 20px;
             text-transform: uppercase;
         }
 
         &-title {
-            margin-bottom: 18px;
+            margin-bottom: 20px;
             font-size: 54px;
-            line-height: 59.4px;
         }
 
         &-text {
@@ -44,29 +38,26 @@
 
 .composition__list {
     text-align: right;
-    // margin-bottom: 40px;
 
-    li {
-        display: inline-block;
-    }
-
-    &-item {
-        margin-left: 16px;
-    }
-
-    @media screen and (max-width: $breakpoint992){
+    @media (max-width: $breakpoint992) {
         text-align: center;
     }
-}
 
-.composition__item {
-    &-icon {
-        float: left;
-        margin-top: 5px;
-    }
+    .composition__item {
+        display: inline-block;
+        // margin-left: -12px;
 
-    &-text {
-        float: right;
-        margin-left: 6.5px;
+        &-icon {
+            margin-right: 49px;
+            padding-right: 22px;
+            // float: left;
+            // margin-top: 5px;
+        }
+
+        &-text {
+            // float: right;
+            // margin-left: 6.5px;
+            margin-top: -20px;
+        }
     }
 }

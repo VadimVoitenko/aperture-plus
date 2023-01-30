@@ -1,6 +1,10 @@
 // Tools Section
 .tools {
     background: $blackColor;
+
+    .container{
+        padding: 0;
+    }
 }
 
 .tools__content {

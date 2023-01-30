@@ -43,7 +43,7 @@ const swiper = new Swiper('.swiper-container', {
   breakpoints: {
     320: {
       slidesPerView: 1,
-      spaceBetween: 100,
+      spaceBetween: 125,
       // centeredSlides: true,
     }, 640: {
       slidesPerView: 2,

@@ -10,11 +10,20 @@
     padding: 120px 120px 140px 120px;
     overflow: hidden;
 
+    @media screen and (max-width: $breakpoint992) {
+        padding: 80px;
+    }
+
     // &-info {}
 
     &-title {
         margin-bottom: 15px;
         font-size: 40px;
+
+        @media screen and (max-width: $breakpoint992) {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
     }
 
     &-description {
@@ -22,6 +31,9 @@
         font-size: 24px;
         line-height: 30px;
 
+        @media screen and (max-width: $breakpoint992) {
+            font-size: 20px;
+        }
     }
 }
 

@@ -7,8 +7,6 @@
     text-align: center;
     position: relative;
 
-
-
     &-title {
         margin: 0 auto;
         max-width: 571px;
@@ -16,11 +14,23 @@
         font-size: 40px;
         line-height: 42px;
         margin-bottom: 15px;
+
+        @media screen and (max-width: $breakpoint992) {
+            font-size: 24px;
+        }
+
+        @media screen and (max-width: $breakpoint640) {
+            font-size: 24px;
+        }
     }
 
     &-notice {
         font-size: 24px;
         margin-bottom: 42px;
+
+        @media screen and (max-width: $breakpoint640) {
+            font-size: 20px;
+        }
     }
 
     & img {

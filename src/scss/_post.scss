@@ -2,6 +2,10 @@
 
 .post {
     position: relative;
+    // max-width: 1440px;
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
 
     & img {
         background-position: center;
@@ -18,6 +22,10 @@
         right: 0px;
         padding-right: 62px;
         transform: translateY(-50%);
+
+        @media screen and (max-width: $breakpoint768) {
+            display: none;
+        }
     }
 
     &__title {
@@ -32,38 +40,40 @@
         letter-spacing: 2px;
         text-align: left;
     }
-}
 
-.composition__list-post {
-    position: absolute;
-    bottom: 40px;
-    right: 40px;
-    max-width: 340px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-
-    li {
+    .composition__list-post {
+        position: absolute;
+        bottom: 40px;
+        right: 40px;
+        max-width: 340px;
+        width: 100%;
         display: flex;
+        justify-content: space-between;
+
+        li {
+            display: flex;
+        }
+
+        &-item {
+            margin-left: 16px;
+        }
+
+        @media screen and (max-width: $breakpoint768) {
+            bottom: 20px;
+            right: 50%;
+            transform: translateX(50%);
+        }
     }
 
-    &-item {
-        margin-left: 16px;
-    }
+    .composition__item {
+        &-icon {
+            float: left;
+            margin-top: 5px;
+        }
 
-    @media screen and (max-width: $breakpoint992) {
-        text-align: center;
-    }
-}
-
-.composition__item {
-    &-icon {
-        float: left;
-        margin-top: 5px;
-    }
-
-    &-text {
-        float: right;
-        margin-left: 6.5px;
+        &-text {
+            float: right;
+            margin-left: 6.5px;
+        }
     }
 }

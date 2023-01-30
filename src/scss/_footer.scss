@@ -10,12 +10,33 @@ footer .container {
 }
 
 .footer__content {
-    padding: 100px 136px;
+    padding: 100px;
+
+    @media screen and (max-width: $breakpoint1024) {
+        padding: 50px 68px;
+    }
+
+    @media screen and (max-width: $breakpoint768) {
+        padding: 40px 58px;
+    }
+
+    @media screen and (max-width: $breakpoint500){
+        padding: 10px 15px;
+    }
 }
 
 .footer__menu {
     display: grid;
     grid-template-columns: 60% 20% 20%;
+    margin: 15px;
+
+    @media screen and (max-width: $breakpoint992) {
+        grid-template-columns: 50% 28% 22%;
+    }
+
+    @media screen and (max-width: $breakpoint768) {
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    }
 
     &-logo {
         margin-bottom: 20px;
@@ -24,6 +45,10 @@ footer .container {
     &-text p {
         font-size: 13px;
         text-align: left;
+
+        @media screen and (max-width: $breakpoint768) {
+            font-size: 16px;
+        }
     }
 
     &-list {
@@ -41,6 +66,10 @@ footer .container {
         color: $grayColor;
         letter-spacing: 2px;
         text-transform: uppercase;
+
+        @media screen and (max-width: $breakpoint768) {
+            margin-top: 15px;
+        }
     }
 
     &-item a {
@@ -69,9 +98,22 @@ hr {
     display: grid;
     grid-template-columns: 60% 40%;
 
+    @media screen and (max-width: $breakpoint1100) {
+        grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+    }
+
+    @media screen and (max-width: $breakpoint878) {
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    }
+
     &-info {
         margin-top: 36px;
         margin-right: auto;
+
+        @media screen and (max-width: $breakpoint878) {
+            margin: 0 auto;
+            margin-top: 36px;
+        }
     }
 
     &-title {
@@ -83,6 +125,10 @@ hr {
     &-description {
         font-size: 13px;
         text-align: left;
+
+        @media screen and (max-width: $breakpoint878) {
+            text-align: center;
+        }
     }
 
     &-form {
@@ -97,14 +143,24 @@ hr {
             // border: 1px solid #E5E7EB;
             border-radius: 12px;
 
+            @media screen and (max-width: $breakpoint878) {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
             & input {
-                width: 80%;
+                width: 100%;
                 height: 100%;
                 font-family: $fontSecondary, $fontMain;
                 color: $blackColor;
                 padding: 20px 20px;
                 border-radius: 12px;
                 transition: .5s ease;
+
+                // @media screen and (max-width:$breakpoint480){
+                //     width: 75%;
+                // }
+
 
                 &:focus {
                     background: $blackColor;
@@ -138,24 +194,34 @@ hr {
 }
 
 .footer__copyright {
-    margin-top: 56px;
+    margin-top: 25px;
     display: flex;
     justify-content: space-between;
-    // &-text{}
+    align-items: center;
+
+    @media screen and(max-width: $breakpoint768) {
+        flex-direction: column-reverse;
+    }
 
     &-items {
         max-width: 112px;
         width: 100%;
         display: flex;
         justify-content: space-between;
-    }
 
-    &-icon {
-        transition: all 1s ease;
+        @media screen and(max-width: $breakpoint768) {
+            margin-bottom: 15px;
+        }
 
-        & :hover {
-            fill: $whiteColor;
-            transition: all 1s ease;
+        i {
+            font-size: 24px;
+            color: $grayColor;
+            transition: 1s ease;
+
+            &:hover {
+                color: $whiteColor;
+                transition: 1s ease;
+            }
         }
     }
 }

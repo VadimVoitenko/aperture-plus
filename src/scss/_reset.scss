@@ -33,6 +33,10 @@ body {
     -webkit-text-size-adjust: 100%;
 }
 
+main{
+    background: $blackColor;
+}
+
 input::-ms-clear {
     display: none;
 }

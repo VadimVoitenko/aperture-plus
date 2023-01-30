@@ -4,6 +4,11 @@ footer {
     // display: block;
 }
 
+footer .container {
+    max-width: 1440px;
+    width: 100%;
+}
+
 .footer__content {
     padding: 100px 136px;
 }
@@ -42,7 +47,12 @@ footer {
         text-align: left;
         color: $whiteColor;
         line-height: 20px;
+        transition: .8s ease;
 
+        &:hover {
+            color: #777777;
+            transition: .8s ease;
+        }
     }
 }
 
@@ -81,9 +91,10 @@ hr {
         & form {
             position: relative;
             max-width: 458px;
+            width: 100%;
             height: 52px;
-            background: #F9FAFB;
-            border: 1px solid #E5E7EB;
+            // background: #F9FAFB;
+            // border: 1px solid #E5E7EB;
             border-radius: 12px;
 
             & input {
@@ -93,6 +104,13 @@ hr {
                 color: $blackColor;
                 padding: 20px 20px;
                 border-radius: 12px;
+                transition: .5s ease;
+
+                &:focus {
+                    background: $blackColor;
+                    color: $whiteColor;
+                    transition: .5s ease;
+                }
             }
         }
 
@@ -103,25 +121,41 @@ hr {
             width: 63px;
             height: 30px;
             font-family: $fontSecondary, $fontMain;
-            color: $grayColor;
-            background: $blackColor;
+            color: $blackColor;
+            background: $whiteColor;
             border-radius: 11px;
             text-transform: uppercase;
+            transition: .8s ease;
+
+            &:hover {
+                color: $grayColor;
+                background: $blackColor;
+                border: 1px solid $whiteColor;
+                transition: .8s ease;
+            }
         }
     }
 }
 
-.footer__copyright{
+.footer__copyright {
     margin-top: 56px;
     display: flex;
     justify-content: space-between;
-
     // &-text{}
 
-    &-items{
+    &-items {
         max-width: 112px;
         width: 100%;
         display: flex;
         justify-content: space-between;
+    }
+
+    &-icon {
+        transition: all 1s ease;
+
+        & :hover {
+            fill: $whiteColor;
+            transition: all 1s ease;
+        }
     }
 }

@@ -1,5 +1,7 @@
 // Tools Section
-.tools {}
+.tools {
+    background: $blackColor;
+}
 
 .tools__content {
     &-parts {
@@ -22,11 +24,20 @@
             letter-spacing: 2px;
             line-height: 20px;
             text-transform: uppercase;
-
+            transition: 1s;
         }
 
         & img {
             position: relative;
+        }
+
+        a:hover {
+            background: $blackColor;
+
+            span {
+                color: $whiteColor;
+                transition: 1s;
+            }
         }
     }
 
@@ -46,27 +57,31 @@
         height: 100%;
         width: 100%;
         object-fit: cover;
+        transition: all 1.5s ease;
 
         // @media screen and (max-width: $breakpoint992) {
-
         //     display: block;
         //     margin-left: auto;
         //     margin-right: auto;
         //     width: 80%;
         // }
     }
+
+    &-img img:hover {
+        transform: scale(0.8);
+        transition: all 1.5s ease;
+    }
 }
 
 .btn {
     & span {
         display: inline-block;
-        text-transform: none;
         color: $blackColor;
+        text-transform: none;
         letter-spacing: 0.4px;
     }
 
     & img {
-        // display: inline-block;
         top: -7px;
         left: -4px;
     }

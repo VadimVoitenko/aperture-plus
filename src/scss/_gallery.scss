@@ -36,14 +36,35 @@
     position: relative;
 
     & img {
-        // display: inline-block;
         position: relative;
+        transition: 1s;
+    }
+
+    &:hover .gallery__item-img {
+        transform: scale(0.9);
+        transition: 1s;
+        overflow: hidden;
     }
 
     &-info {
         position: absolute;
         left: 30px;
         bottom: 30px;
+
+        span {
+            color: $blackColor;
+            transition: 1s;
+        }
+
+        a:hover {
+            background: $blackColor;
+            transition: 1s;
+
+            span {
+                color: $whiteColor;
+                transition: 1s;
+            }
+        }
     }
 
     &-title {
@@ -62,9 +83,4 @@
         text-align: left;
         margin-bottom: 20px;
     }
-
-    & span {
-        color: $blackColor;
-    }
-
 }

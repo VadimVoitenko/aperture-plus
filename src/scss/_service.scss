@@ -7,6 +7,8 @@
     text-align: center;
     position: relative;
 
+
+
     &-title {
         margin: 0 auto;
         max-width: 571px;
@@ -16,12 +18,25 @@
         margin-bottom: 15px;
     }
 
-    &-notice{
+    &-notice {
         font-size: 24px;
         margin-bottom: 42px;
     }
 
-    img{
+    & img {
         position: relative;
+    }
+
+    & span {
+        transition: 1s;
+    }
+
+    a:hover {
+        background: $blackColor;
+
+        span {
+            color: $whiteColor;
+            transition: 1s;
+        }
     }
 }

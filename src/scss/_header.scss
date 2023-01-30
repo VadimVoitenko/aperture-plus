@@ -40,7 +40,21 @@ nav {
     // .menu__item-link
     &__item-link {
         color: $whiteColor;
-        font-size: 14px;
+        font-size: 15px;
+        transition: 1s;
+
+        &:hover {
+            font-size: 13px;
+            transition: 1s;
+        }
+
+        // &:hover {
+        //     font-size: 13px;
+        // }
+
+        // &:active {
+        //     font-size: 13px;
+        // }
     }
 
     // .menu__btn
@@ -53,6 +67,13 @@ nav {
         padding: 9px 20px;
         transition: 1.5s;
         border: 1px solid $whiteColor;
+
+        &:hover {
+            font-size: 15px;
+            color: $whiteColor;
+            background: $blackColor;
+            border: 1px solid $whiteColor;
+        }
     }
 }
 

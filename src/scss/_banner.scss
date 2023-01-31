@@ -2,7 +2,7 @@
 
 .banner {
     position: relative;
-    height: calc(100vh - 90px);
+    height: 100vh;
     background-image: url(../img/banner.png);
     background-position: center;
     background-size: cover;
@@ -19,8 +19,8 @@
         &-notice {
             display: block;
             font-size: 14px;
-            letter-spacing: 2px;
             text-transform: uppercase;
+            letter-spacing: 2px;
         }
 
         &-title {
@@ -38,6 +38,7 @@
 
 .composition__list {
     text-align: right;
+    margin-bottom: 10px;
 
     @media (max-width: $breakpoint992) {
         text-align: center;

@@ -2,9 +2,9 @@
 
 header {
     position: fixed;
-    z-index: 1000;
-    left: 0;
     top: 0;
+    left: 0;
+    z-index: 1000;
     width: 100vw;
     height: auto;
 }
@@ -18,9 +18,9 @@ nav {
 .navbar {
     display: flex;
     width: 100%;
-    justify-content: space-between;
     padding-top: 34px;
     padding-bottom: 25px;
+    justify-content: space-between;
 }
 
 .logo {
@@ -32,16 +32,25 @@ nav {
 .menu {
     display: flex;
 
-    // .menu__item
     &__item {
         margin-left: 32px;
     }
 
-    // .menu__item-link
     &__item-link {
-        color: $whiteColor;
+        // display: inline-block;
         font-size: 15px;
-        transition: 1s;
+        font-weight: 300;
+        color: $whiteColor;
+        transition: 1s ease;
+
+        // &::before {
+        //     content: attr(title);
+        //     display: block;
+        //     height: 0;
+        //     font-weight: 700;
+        //     overflow: hidden;
+        //     visibility: hidden;
+        // }
 
         &:hover {
             font-size: 13px;
@@ -57,22 +66,22 @@ nav {
         // }
     }
 
-    // .menu__btn
     &__btn {
+        padding: 9px 20px;
+        font-size: 16px;
         color: $blackColor;
         background: $whiteColor;
-        font-size: 16px;
         letter-spacing: 0.4px;
-        border-radius: 14px;
-        padding: 9px 20px;
-        transition: 1.5s;
         border: 1px solid $whiteColor;
+        border-radius: 14px;
+        transition: 0.5s;
 
         &:hover {
             font-size: 15px;
             color: $whiteColor;
             background: $blackColor;
             border: 1px solid $whiteColor;
+            transition: 0.5s;
         }
     }
 }
@@ -85,53 +94,51 @@ nav {
 // Burger menu styles
 @media screen and (max-width: $burgerBreakpoint) {
 
-    // .menu
     .menu {
         position: fixed;
-        background: $headerColor;
-        left: 0;
         top: 0;
-        height: 100vh;
-        width: 100vw;
+        left: 0;
         display: none;
+        width: 100vw;
+        height: 100vh;
+        background: $headerColor;
 
         &.active {
             display: flex;
-            left: 0;
             top: 0;
-            height: 100vh;
+            left: 0;
             width: 100vw;
-            flex-direction: column;
-            pointer-events: all;
+            height: 100vh;
+            z-index: 22;
             justify-content: center;
             align-items: center;
-            z-index: 22;
+            flex-direction: column;
             animation: fade 0.1s linear;
             opacity: 0.95;
+            pointer-events: all;
         }
     }
 
-    // .burger
     .burger {
-        display: block;
         position: relative;
-        height: 20px;
-        width: 30px;
         z-index: 102;
+        display: block;
+        width: 30px;
+        height: 20px;
         cursor: pointer;
 
         &.active-burger {
             &:before {
+                top: 8px;
                 background: $burgerActiveColor;
                 transform: rotate(45deg);
                 transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
-                top: 8px;
             }
 
             &:after {
+                bottom: 10px;
                 background: $burgerActiveColor;
                 transform: rotate(-45deg);
-                bottom: 10px;
                 transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
             }
 
@@ -144,8 +151,8 @@ nav {
         &:after {
             content: '';
             position: absolute;
-            height: 2px;
             width: 100%;
+            height: 2px;
             background: $whiteColor;
             transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
         }
@@ -163,29 +170,26 @@ nav {
             top: 9px;
             right: 0;
             width: 100%;
-            background: $whiteColor;
             height: 2px;
+            background: $whiteColor;
             transform: scale(1);
             transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
         }
     }
 
-    // .menu__item
     .menu__item {
         margin-top: 45px;
     }
 
-    // .menu__link
     .menu__item-link {
-        color: $whiteColor;
         font-size: 22px;
+        color: $whiteColor;
     }
 
-    // .menu__btn
     .menu__btn {
-        color: $blackColor;
-        font-size: 22px;
-        border-radius: 14px;
         padding: 9px 20px;
+        font-size: 22px;
+        color: $blackColor;
+        border-radius: 14px;
     }
 }

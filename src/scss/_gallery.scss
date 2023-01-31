@@ -5,15 +5,15 @@
 
     &__content {
         &-title {
+            margin-bottom: 15px;
             font-size: 40px;
             line-height: 42px;
-            margin-bottom: 15px;
         }
 
         &-description {
+            margin-bottom: 40px;
             font-size: 23px;
             line-height: 30px;
-            margin-bottom: 42px;
         }
     }
 
@@ -32,7 +32,7 @@
 }
 
 .gallery__item {
-    // max-width: 576px;
+    // max-width: 575px;
     position: relative;
 
     & img {
@@ -41,8 +41,8 @@
     }
 
     &:hover .gallery__item-img {
-        transform: scale(0.9);
-        transition: 1s;
+        transform: scale(0.95);
+        transition: .7s;
         overflow: hidden;
     }
 
@@ -53,34 +53,34 @@
 
         span {
             color: $blackColor;
-            transition: 1s;
+            transition: .5s;
         }
 
         a:hover {
             background: $blackColor;
-            transition: 1s;
+            transition: .5s;
 
             span {
                 color: $whiteColor;
-                transition: 1s;
+                transition: .5s;
             }
         }
     }
 
     &-title {
+        margin-bottom: 30px;
         font-size: 14px;
         font-weight: 400;
         line-height: 20px;
-        color: $whiteColor;
-        text-transform: uppercase;
         text-align: left;
+        text-transform: uppercase;
+        color: $whiteColor;
         letter-spacing: 2px;
-        margin-bottom: 30px;
     }
 
     &-text {
-        max-width: 514px;
-        text-align: left;
+        max-width: 515px;
         margin-bottom: 20px;
+        text-align: left;
     }
 }

@@ -3,13 +3,13 @@
 }
 
 .service__content {
-    padding: 113px 0 108px;
+    position: relative;
+    padding: 115px 0 110px;
     text-align: center;
-    // position: relative;
 
     &-title {
         margin: 0 auto;
-        max-width: 571px;
+        max-width: 570px;
         width: 100%;
         font-size: 40px;
         line-height: 42px;
@@ -33,12 +33,19 @@
         }
     }
 
-    & img {
-        position: relative;
-    }
+    // .btn-service {
+    //     line-height: 25px;
+    //     text-align: center;
+    //     transition: 0.5s;
+    // }
 
-    & span {
-        transition: 1s;
+    // & img {
+    //     position: relative;
+    // }
+
+    span {
+        line-height: 30px;
+        transition: 0.5s;
     }
 
     a:hover {
@@ -46,7 +53,7 @@
 
         span {
             color: $whiteColor;
-            transition: 1s;
+            transition: 0.5s;
         }
     }
 }

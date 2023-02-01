@@ -203,14 +203,14 @@ hr {
             margin-bottom: 15px;
         }
 
-        i {
+        span {
             font-size: 24px;
             color: $grayColor;
-            transition: 1s ease;
+            transition: .5s ease;
 
             &:hover {
                 color: $whiteColor;
-                transition: 1s ease;
+                transition: .5s ease;
             }
         }
     }

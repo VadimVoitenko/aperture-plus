@@ -31,39 +31,31 @@ nav {
 
 .menu {
     display: flex;
+    gap: 40px;
 
     &__item {
-        margin-left: 32px;
+        display: inline-block;
     }
 
     &__item-link {
         // display: inline-block;
         font-size: 15px;
-        font-weight: 300;
         color: $whiteColor;
-        transition: 1s ease;
+        transition: font-size 1s ease;
 
-        // &::before {
-        //     content: attr(title);
-        //     display: block;
-        //     height: 0;
-        //     font-weight: 700;
-        //     overflow: hidden;
-        //     visibility: hidden;
-        // }
+        &::before {
+            content: attr(title);
+            // display: block;
+            // height: 0;
+            font-size: 13px;
+            overflow: hidden;
+            visibility: hidden;
+        }
 
         &:hover {
             font-size: 13px;
             transition: 1s;
         }
-
-        // &:hover {
-        //     font-size: 13px;
-        // }
-
-        // &:active {
-        //     font-size: 13px;
-        // }
     }
 
     &__btn {

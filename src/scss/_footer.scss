@@ -2,7 +2,6 @@
 footer {
     background: $blackColor;
 
-    // display: block;
     .container {
         max-width: 1440px;
         width: 100%;
@@ -12,16 +11,16 @@ footer {
 footer .footer__content {
     padding: 100px 0;
 
-    @media screen and (max-width: $breakpoint1024) {
-        padding: 50px 68px;
+    @media (max-width: $breakpoint1024) {
+        padding: 50px 0;
     }
 
-    @media screen and (max-width: $breakpoint768) {
-        padding: 40px 58px;
+    @media (max-width: $breakpoint768) {
+        padding: 40px 0;
     }
 
-    @media screen and (max-width: $breakpoint640) {
-        padding: 10px 15px;
+    @media (max-width: $breakpoint640) {
+        padding: 10px 0;
     }
 }
 
@@ -29,14 +28,14 @@ footer .footer__content {
     display: grid;
     grid-template-columns: 62% 19% 17%;
     gap: 15px;
-    // overflow: hidden;
 
-    @media screen and (max-width: $breakpoint992) {
-        grid-template-columns: 50% 28% 22%;
+    @media (max-width: $breakpoint992) {
+        grid-template-columns: 50% 28% 20%;
     }
 
-    @media screen and (max-width: $breakpoint768) {
+    @media (max-width: $breakpoint768) {
         grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+        padding: 0 50px;
     }
 
     &-logo img {
@@ -47,23 +46,24 @@ footer .footer__content {
         font-size: 13px;
         text-align: left;
 
-        @media screen and (max-width: $breakpoint768) {
+        @media (max-width: $breakpoint768) {
+            margin-bottom: 20px;
             font-size: 16px;
         }
     }
 }
 
-
-
 .footer__list {
+    @media (max-width:$breakpoint768 ) {
+        margin-bottom: 20px;
+    }
+
     &-title {
-        text-align: left;
         color: $grayColor;
         letter-spacing: 2px;
         text-transform: uppercase;
-        margin-bottom: 10px;
 
-        @media screen and (max-width: $breakpoint768) {
+        @media (max-width: $breakpoint768) {
             margin-top: 15px;
         }
     }
@@ -86,54 +86,40 @@ footer .footer__content {
 }
 
 hr {
+    margin: 40px 0;
+    text-align: center;
+    color: $whiteColor;
     border: none;
     border-top: 2px solid $whiteColor;
-    color: $whiteColor;
     overflow: visible;
-    text-align: center;
-    margin: 40px 0;
 }
 
 .footer__subscribe {
-    // display: grid;
-    // grid-template-columns: 60% 40%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 15px;
-    // @media (max-width: $breakpoint878) {
-    //     align-items: center;
-    // }
-
-    // @media screen and (max-width: $breakpoint1100) {
-    //     grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
-    // }
-
-    // @media screen and (max-width: $breakpoint878) {
-    //     grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
-    // }
 
     &-info {
-        // margin-top: 36px;
         margin-right: auto;
 
-        @media screen and (max-width: $breakpoint878) {
+        @media (max-width: $breakpoint768) {
             margin: 0 auto;
-            // margin-top: 36px;
         }
     }
 
     &-title {
-        letter-spacing: 2px;
-        text-transform: uppercase;
         margin-bottom: 20px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+
     }
 
     &-description {
         font-size: 13px;
         text-align: left;
 
-        @media screen and (max-width: $breakpoint878) {
+        @media (max-width: $breakpoint768) {
             text-align: center;
         }
     }
@@ -148,14 +134,10 @@ hr {
             max-width: 300px;
         }
 
-        @media (max-width: $breakpoint878) {
+        @media (max-width: $breakpoint768) {
+            max-width: 458px;
             margin: 0 auto;
         }
-
-        // @media screen and (max-width: $breakpoint878) {
-        //     left: 50%;
-        //     transform: translateX(-50%);
-        // }
 
         & input {
             width: 100%;
@@ -165,11 +147,6 @@ hr {
             padding: 20px;
             border-radius: 12px;
             transition: .5s ease;
-
-            // @media screen and (max-width:$breakpoint480){
-            //     width: 75%;
-            // }
-
 
             &:focus {
                 background: $blackColor;
@@ -201,15 +178,20 @@ hr {
     }
 }
 
-
 .footer__copyright {
     margin-top: 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    @media screen and(max-width: $breakpoint768) {
+    @media(max-width: $breakpoint768) {
         flex-direction: column-reverse;
+    }
+
+    & span {
+        @media (max-width: $breakpoint480) {
+            font-size: 14px;
+        }
     }
 
     &-items {
@@ -217,7 +199,7 @@ hr {
         justify-content: space-between;
         gap: 15px;
 
-        @media screen and(max-width: $breakpoint768) {
+        @media(max-width: $breakpoint768) {
             margin-bottom: 15px;
         }
 

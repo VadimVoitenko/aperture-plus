@@ -2,7 +2,6 @@
 
 .post {
     position: relative;
-    // max-width: 1440px;
     max-width: 1920px;
     width: 100%;
     margin: 0 auto;
@@ -23,57 +22,56 @@
         padding-right: 60px;
         transform: translateY(-50%);
 
-        @media screen and (max-width: $breakpoint768) {
+        @media (max-width: $breakpoint992) {
+            padding-right: 0;
+        }
+
+        @media (max-width: $breakpoint768) {
             display: none;
         }
     }
 
     &__title {
         text-align: left;
-        letter-spacing: 2px;
         text-transform: uppercase;
+        letter-spacing: 2px;
         color: $whiteColor;
     }
 
     &__text {
         max-width: 355px;
+        width: 100%;
         text-align: left;
         letter-spacing: 2px;
     }
 
-    .composition__list-post {
+    .composition__list {
         position: absolute;
         bottom: 40px;
-        right: 40px;
-        display: flex;
-        max-width: 340px;
-        width: 100%;
-        justify-content: space-between;
+        right: 0;
+        width: 95%;
+        text-align: right;
+        padding: 0 40px;
 
-        li {
-            display: flex;
+        @media (max-width: $breakpoint992) {
+            text-align: center;
         }
 
-        &-item {
-            margin-left: 16px;
+        @media (max-width: $breakpoint480) {
+            display: none;
         }
 
-        @media screen and (max-width: $breakpoint768) {
-            bottom: 20px;
-            right: 50%;
-            transform: translateX(50%);
-        }
-    }
+        .composition__item {
+            display: inline-block;
 
-    .composition__item {
-        &-icon {
-            margin-top: 5px;
-            float: left;
-        }
+            &-icon {
+                margin-right: 49px;
+                padding-right: 22px;
+            }
 
-        &-text {
-            margin-left: 5px;
-            float: right;
+            &-text {
+                margin-top: -25px;
+            }
         }
     }
 }

@@ -7,12 +7,10 @@ footer {
         max-width: 1440px;
         width: 100%;
     }
-
-
 }
 
 footer .footer__content {
-    padding: 100px;
+    padding: 100px 0;
 
     @media screen and (max-width: $breakpoint1024) {
         padding: 50px 68px;
@@ -29,8 +27,9 @@ footer .footer__content {
 
 .footer__menu {
     display: grid;
-    grid-template-columns: 60% 20% 20%;
-    margin: 15px;
+    grid-template-columns: 62% 19% 17%;
+    gap: 15px;
+    // overflow: hidden;
 
     @media screen and (max-width: $breakpoint992) {
         grid-template-columns: 50% 28% 22%;
@@ -40,7 +39,7 @@ footer .footer__content {
         grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
     }
 
-    &-logo {
+    &-logo img {
         margin-bottom: 20px;
     }
 
@@ -52,37 +51,36 @@ footer .footer__content {
             font-size: 16px;
         }
     }
-
-    &-list {
-        max-height: 200px;
-    }
 }
 
-.footer__list {
-    &-item {
-        margin-bottom: 10px;
-    }
 
-    &-item p {
+
+.footer__list {
+    &-title {
         text-align: left;
         color: $grayColor;
         letter-spacing: 2px;
         text-transform: uppercase;
+        margin-bottom: 10px;
 
         @media screen and (max-width: $breakpoint768) {
             margin-top: 15px;
         }
     }
 
+    &-item {
+        margin-top: 10px;
+    }
+
     &-item a {
         text-align: left;
         color: $whiteColor;
         line-height: 20px;
-        transition: .8s ease;
+        transition: .5s ease;
 
         &:hover {
             color: #777777;
-            transition: .8s ease;
+            transition: .5s ease;
         }
     }
 }
@@ -93,28 +91,35 @@ hr {
     color: $whiteColor;
     overflow: visible;
     text-align: center;
-    margin-top: 36px;
+    margin: 40px 0;
 }
 
 .footer__subscribe {
-    display: grid;
-    grid-template-columns: 60% 40%;
+    // display: grid;
+    // grid-template-columns: 60% 40%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    // @media (max-width: $breakpoint878) {
+    //     align-items: center;
+    // }
 
-    @media screen and (max-width: $breakpoint1100) {
-        grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
-    }
+    // @media screen and (max-width: $breakpoint1100) {
+    //     grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+    // }
 
-    @media screen and (max-width: $breakpoint878) {
-        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
-    }
+    // @media screen and (max-width: $breakpoint878) {
+    //     grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    // }
 
     &-info {
-        margin-top: 36px;
+        // margin-top: 36px;
         margin-right: auto;
 
         @media screen and (max-width: $breakpoint878) {
             margin: 0 auto;
-            margin-top: 36px;
+            // margin-top: 36px;
         }
     }
 
@@ -134,66 +139,68 @@ hr {
     }
 
     &-form {
-        margin-top: 40px;
+        position: relative;
+        max-width: 458px;
+        width: 100%;
+        max-height: 52px;
 
-        & form {
-            position: relative;
-            max-width: 458px;
-            width: 100%;
-            height: 52px;
-            // background: #F9FAFB;
-            // border: 1px solid #E5E7EB;
-            border-radius: 12px;
-
-            @media screen and (max-width: $breakpoint878) {
-                left: 50%;
-                transform: translateX(-50%);
-            }
-
-            & input {
-                width: 100%;
-                height: 100%;
-                font-family: $fontSecondary, $fontMain;
-                color: $blackColor;
-                padding: 20px;
-                border-radius: 12px;
-                transition: .5s ease;
-
-                // @media screen and (max-width:$breakpoint480){
-                //     width: 75%;
-                // }
-
-
-                &:focus {
-                    background: $blackColor;
-                    color: $whiteColor;
-                    transition: .5s ease;
-                }
-            }
+        @media (max-width: $breakpoint1024) {
+            max-width: 300px;
         }
 
-        & button {
-            position: absolute;
-            top: calc(50% - 15px);
-            right: 6px;
-            width: 63px;
-            height: 30px;
+        @media (max-width: $breakpoint878) {
+            margin: 0 auto;
+        }
+
+        // @media screen and (max-width: $breakpoint878) {
+        //     left: 50%;
+        //     transform: translateX(-50%);
+        // }
+
+        & input {
+            width: 100%;
+            height: 100%;
             font-family: $fontSecondary, $fontMain;
             color: $blackColor;
-            background: $whiteColor;
-            border-radius: 11px;
-            text-transform: uppercase;
-            transition: .8s ease;
+            padding: 20px;
+            border-radius: 12px;
+            transition: .5s ease;
 
-            &:hover {
-                color: $grayColor;
+            // @media screen and (max-width:$breakpoint480){
+            //     width: 75%;
+            // }
+
+
+            &:focus {
                 background: $blackColor;
-                border: 1px solid $whiteColor;
-                transition: .8s ease;
+                color: $whiteColor;
+                transition: .5s ease;
             }
         }
     }
+
+    & button {
+        position: absolute;
+        top: 5px;
+        right: 6px;
+        padding: 10px;
+        font-family: $fontSecondary, $fontMain;
+        color: $blackColor;
+        background: $whiteColor;
+        border: 1px solid #fff;
+        border-radius: 11px;
+        text-transform: uppercase;
+        transition: .8s ease;
+
+        &:hover {
+            color: $grayColor;
+            background: $blackColor;
+            border: 1px solid $whiteColor;
+            transition: .8s ease;
+        }
+    }
 }
+
 
 .footer__copyright {
     margin-top: 25px;
@@ -206,10 +213,9 @@ hr {
     }
 
     &-items {
-        max-width: 112px;
-        width: 100%;
         display: flex;
         justify-content: space-between;
+        gap: 15px;
 
         @media screen and(max-width: $breakpoint768) {
             margin-bottom: 15px;

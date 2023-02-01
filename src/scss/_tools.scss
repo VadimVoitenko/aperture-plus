@@ -2,7 +2,7 @@
 .tools {
     background: $blackColor;
 
-    .container{
+    .container {
         padding: 0;
     }
 }
@@ -25,6 +25,7 @@
             padding: 100px;
             text-align: center;
         }
+
         @media screen and (max-width: 500px) {
             padding: 50px;
             text-align: center;
@@ -88,11 +89,6 @@
         object-fit: cover;
         transition: all 1.5s ease;
         position: relative;
-    }
-
-    &-img img:hover {
-        transform: scale(0.8);
-        transition: all 1.5s ease;
     }
 }
 

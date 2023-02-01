@@ -8,11 +8,11 @@
     margin: 0 auto;
 
     & img {
-        background-position: center;
-        background-size: cover;
         max-height: 600px;
         height: 100%;
         width: 100%;
+        background-position: center;
+        background-size: cover;
         object-fit: cover;
     }
 
@@ -20,7 +20,7 @@
         position: absolute;
         top: 50%;
         right: 0px;
-        padding-right: 62px;
+        padding-right: 60px;
         transform: translateY(-50%);
 
         @media screen and (max-width: $breakpoint768) {
@@ -29,25 +29,25 @@
     }
 
     &__title {
-        letter-spacing: 2px;
         text-align: left;
-        color: $whiteColor;
+        letter-spacing: 2px;
         text-transform: uppercase;
+        color: $whiteColor;
     }
 
     &__text {
         max-width: 355px;
-        letter-spacing: 2px;
         text-align: left;
+        letter-spacing: 2px;
     }
 
     .composition__list-post {
         position: absolute;
         bottom: 40px;
         right: 40px;
+        display: flex;
         max-width: 340px;
         width: 100%;
-        display: flex;
         justify-content: space-between;
 
         li {
@@ -67,13 +67,13 @@
 
     .composition__item {
         &-icon {
-            float: left;
             margin-top: 5px;
+            float: left;
         }
 
         &-text {
+            margin-left: 5px;
             float: right;
-            margin-left: 6.5px;
         }
     }
 }

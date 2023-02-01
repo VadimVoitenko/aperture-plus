@@ -1,5 +1,4 @@
 // Banner Section
-
 .banner {
     position: relative;
     height: 100vh;
@@ -21,17 +20,29 @@
             font-size: 14px;
             text-transform: uppercase;
             letter-spacing: 2px;
+
+            @media(max-width: $breakpoint480) {
+                font-size: 12px;
+            }
         }
 
         &-title {
             margin-bottom: 20px;
             font-size: 54px;
+
+            @media(max-width: $breakpoint480) {
+                font-size: 40px;
+            }
         }
 
         &-text {
             max-width: 580px;
             margin: 0 auto;
             margin-bottom: 20px;
+
+            @media (max-width: $breakpoint640) {
+                padding: 0 15px;
+            }
         }
     }
 }
@@ -44,20 +55,19 @@
         text-align: center;
     }
 
+    @media (max-width: $breakpoint380) {
+        display: none;
+    }
+
     .composition__item {
         display: inline-block;
-        // margin-left: -12px;
 
         &-icon {
             margin-right: 49px;
             padding-right: 22px;
-            // float: left;
-            // margin-top: 5px;
         }
 
         &-text {
-            // float: right;
-            // margin-left: 6.5px;
             margin-top: -20px;
         }
     }

@@ -11,6 +11,9 @@ header {
 
 // Navbar
 nav {
+    backdrop-filter: blur(10px);
+    background: hsla(0, 0%, 5%, .75);
+    border-bottom: 1px solid #69696a;
     background-color: $headerColor;
     overflow: hidden;
 }

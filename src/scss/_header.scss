@@ -5,25 +5,23 @@ header {
     top: 0;
     left: 0;
     z-index: 1000;
-    width: 100vw;
+    width: 100%;
     height: auto;
 }
 
 // Navbar
 nav {
-    backdrop-filter: blur(10px);
     background: hsla(0, 0%, 5%, .75);
     border-bottom: 1px solid #69696a;
-    background-color: $headerColor;
     overflow: hidden;
 }
 
 .navbar {
     display: flex;
     width: 100%;
-    padding-top: 34px;
-    padding-bottom: 25px;
+    padding: 25px 0;
     justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
@@ -34,30 +32,37 @@ nav {
 
 .menu {
     display: flex;
+    align-items: center;
     gap: 40px;
 
-    &__item {
-        display: inline-block;
-    }
+    &__list {
+        display: flex;
+        gap: 40px;
 
-    &__item-link {
-        // display: inline-block;
-        font-size: 15px;
-        color: $whiteColor;
-        transition: font-size 1s ease;
-
-        &::before {
-            content: attr(title);
-            // display: block;
-            // height: 0;
-            font-size: 13px;
-            overflow: hidden;
-            visibility: hidden;
+        &-item {
+            display: inline-block;
         }
 
-        &:hover {
-            font-size: 13px;
-            transition: 1s;
+        &-link {
+            display: inline-block;
+            font-weight: 300;
+            font-size: 15px;
+            color: $whiteColor;
+            transition: font-weight 0.5s ease;
+
+            &::before {
+                content: attr(title);
+                display: block;
+                height: 0;
+                font-weight: 700;
+                overflow: hidden;
+                visibility: hidden;
+            }
+
+            &:hover {
+                font-weight: 700;
+
+            }
         }
     }
 
@@ -72,7 +77,6 @@ nav {
         transition: 0.5s;
 
         &:hover {
-            font-size: 15px;
             color: $whiteColor;
             background: $blackColor;
             border: 1px solid $whiteColor;
@@ -87,8 +91,7 @@ nav {
 }
 
 // Burger menu styles
-@media screen and (max-width: $burgerBreakpoint) {
-
+@media (max-width: $burgerBreakpoint) {
     .menu {
         position: fixed;
         top: 0;
@@ -172,11 +175,16 @@ nav {
         }
     }
 
-    .menu__item {
+    .menu__list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu__list-item {
         margin-top: 45px;
     }
 
-    .menu__item-link {
+    .menu__list-link {
         font-size: 22px;
         color: $whiteColor;
     }

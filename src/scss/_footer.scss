@@ -35,7 +35,6 @@ footer .footer__content {
 
     @media (max-width: $breakpoint768) {
         grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
-        padding: 0 50px;
     }
 
     &-logo img {
@@ -70,6 +69,10 @@ footer .footer__content {
 
     &-item {
         margin-top: 10px;
+
+        @media (max-width: $breakpoint768) {
+            margin-top: 20px;
+        }
     }
 
     &-item a {
@@ -188,7 +191,7 @@ hr {
         flex-direction: column-reverse;
     }
 
-    & span {
+    &-text{
         @media (max-width: $breakpoint480) {
             font-size: 14px;
         }
@@ -201,6 +204,7 @@ hr {
 
         @media(max-width: $breakpoint768) {
             margin-bottom: 15px;
+            gap: 30px;
         }
 
         span {

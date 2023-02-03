@@ -54,20 +54,21 @@
             <hr data-aos="fade-up">
             <div class="footer__subscribe">
                 <div class="footer__subscribe-info" data-aos="fade-left">
-                    <h4 class="footer__subscribe-title">Subscribe to our newsletter</h3>
+                    <h4 class="footer__subscribe-title">Subscribe to our newsletter</h4>
                         <p class="footer__subscribe-description">Read about all the things we do.</p>
                 </div>
                 <!-- <form action="GET"> -->
                 <form class="footer__subscribe-form" data-aos="fade-right">
-                    <label for="email">
-                        <input type="email" placeholder="Enter your email">
+                    <label for="email" id="email">
+                        <input type="email" name="email" maxlength="27" autocomplete="email" autocapitalize="off"
+                            inputmode="email" placeholder="Enter your email">
                     </label>
                     <button type="submit">Send</button>
                 </form>
             </div>
             <hr data-aos="fade-down">
             <div class="footer__copyright">
-                <span data-aos="fade-down-left">© Aperture Photography, Inc. All rights
+                <span class="footer__copyright-text" data-aos="fade-down-left">© Aperture Photography, Inc. All rights
                     reserved. Licensing.
                 </span>
                 <ul class="footer__copyright-items" data-aos="fade-down-right">

@@ -38,7 +38,7 @@
         &-text {
             max-width: 580px;
             margin: 0 auto;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
 
             @media (max-width: $breakpoint640) {
                 padding: 0 15px;
@@ -48,29 +48,19 @@
 
     .composition__list {
         position: absolute;
-        bottom: -10px;
-        right: 0;
+        bottom: 0px;
+        right: 10px;
         display: flex;
         gap: 30px;
-        // text-align: right;
-        // margin-bottom: 10px;
 
-        // @media (max-width: $breakpoint992) {
-        //     text-align: center;
-        // }
-
-        // @media (max-width: $breakpoint380) {
-        //     display: none;
-        // }
+        @media (max-width: $breakpoint768) {
+            right: 50%;
+            transform: translateX(50%);
+        }
 
         .composition__item {
             display: inline-flex;
             gap: 5px;
-
-            // &-icon {
-            //     margin-right: 49px;
-            //     padding-right: 22px;
-            // }
         }
     }
 }

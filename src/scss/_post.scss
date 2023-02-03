@@ -1,5 +1,4 @@
 // Post Section
-
 .post {
     position: relative;
     max-width: 1920px;
@@ -10,8 +9,8 @@
         max-height: 600px;
         height: 100%;
         width: 100%;
-        background-position: center;
-        background-size: cover;
+        // background-position: center;
+        // background-size: cover;
         object-fit: cover;
     }
 
@@ -48,30 +47,30 @@
     .composition__list {
         position: absolute;
         bottom: 40px;
-        right: 0;
-        width: 95%;
-        text-align: right;
-        padding: 0 40px;
+        right: 40px;
+        display: flex;
+        gap: 30px;
+        // width: 95%;
+        // text-align: right;
+        // padding: 0 40px;
 
-        @media (max-width: $breakpoint992) {
-            text-align: center;
-        }
+        // @media (max-width: $breakpoint992) {
+        //     text-align: center;
+        // }
 
-        @media (max-width: $breakpoint480) {
-            display: none;
-        }
+        // @media (max-width: $breakpoint480) {
+        //     display: none;
+        // }
 
         .composition__item {
-            display: inline-block;
+            // display: inline-block;
+            display: inline-flex;
+            gap: 5px;
 
-            &-icon {
-                margin-right: 49px;
-                padding-right: 22px;
-            }
-
-            &-text {
-                margin-top: -25px;
-            }
+            // &-icon {
+            //     margin-right: 49px;
+            //     padding-right: 22px;
+            // }
         }
     }
 }

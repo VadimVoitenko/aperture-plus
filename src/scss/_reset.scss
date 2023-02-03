@@ -48,6 +48,7 @@ input::-ms-clear {
 
 ::-webkit-scrollbar-track {
     background: $blackColor;
+    border-left: 1px solid $grayColor;
 }
 
 ::-webkit-scrollbar-thumb {

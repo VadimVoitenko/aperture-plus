@@ -45,30 +45,32 @@
             }
         }
     }
-}
 
-.composition__list {
-    text-align: right;
-    margin-bottom: 10px;
+    .composition__list {
+        position: absolute;
+        bottom: -10px;
+        right: 0;
+        display: flex;
+        gap: 30px;
+        // text-align: right;
+        // margin-bottom: 10px;
 
-    @media (max-width: $breakpoint992) {
-        text-align: center;
-    }
+        // @media (max-width: $breakpoint992) {
+        //     text-align: center;
+        // }
 
-    @media (max-width: $breakpoint380) {
-        display: none;
-    }
+        // @media (max-width: $breakpoint380) {
+        //     display: none;
+        // }
 
-    .composition__item {
-        display: inline-block;
+        .composition__item {
+            display: inline-flex;
+            gap: 5px;
 
-        &-icon {
-            margin-right: 49px;
-            padding-right: 22px;
-        }
-
-        &-text {
-            margin-top: -20px;
+            // &-icon {
+            //     margin-right: 49px;
+            //     padding-right: 22px;
+            // }
         }
     }
 }

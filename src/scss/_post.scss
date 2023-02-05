@@ -5,15 +5,6 @@
     width: 100%;
     margin: 0 auto;
 
-    & img {
-        max-height: 600px;
-        height: 100%;
-        width: 100%;
-        // background-position: center;
-        // background-size: cover;
-        object-fit: cover;
-    }
-
     &__info {
         position: absolute;
         top: 50%;
@@ -26,7 +17,18 @@
         }
 
         @media (max-width: $breakpoint768) {
-            display: none;
+            top: 20%;
+            right: 50%;
+            display: flex;
+            max-width: 350px;
+            width: 100%;
+            flex-direction: column;
+            transform: translateX(50%);
+        }
+
+        @media (max-width: $breakpoint480) {
+            top: 20%;
+            right: 50%;
         }
     }
 
@@ -35,6 +37,14 @@
         text-transform: uppercase;
         letter-spacing: 2px;
         color: $whiteColor;
+
+        @media (max-width: $breakpoint768) {
+            text-align: center;
+        }
+
+        @media (max-width: $breakpoint480) {
+            font-size: 12px;
+        }
     }
 
     &__text {
@@ -42,6 +52,15 @@
         width: 100%;
         text-align: left;
         letter-spacing: 2px;
+
+        @media (max-width: $breakpoint768) {
+            text-align: center;
+        }
+
+        @media (max-width: $breakpoint480) {
+            font-size: 12px;
+            line-height: 12px;
+        }
     }
 
     .composition__list {
@@ -54,9 +73,11 @@
         // text-align: right;
         // padding: 0 40px;
 
-        // @media (max-width: $breakpoint992) {
-        //     text-align: center;
-        // }
+        @media (max-width: $breakpoint768) {
+            bottom: 20px;
+            right: 50%;
+            transform: translateX(50%);
+        }
 
         // @media (max-width: $breakpoint480) {
         //     display: none;

@@ -3,6 +3,7 @@ function burgerMenu() {
   const burger = document.querySelector('.burger')
   const menu = document.querySelector('.menu')
   const body = document.querySelector('body')
+  // const menuButton = document.querySelectorAll('.menu__list-item')
 
   burger.addEventListener('click', () => {
     if (!menu.classList.contains('active')) {
@@ -16,6 +17,16 @@ function burgerMenu() {
     }
   })
 
+  // menuButton.forEach((button) => {
+  //   button.addEventListener('click', () => {
+  //     if (menu.classList.contains('active')) {
+  //       menu.classList.remove('active')
+  //       burger.classList.remove('active-burger')
+  //       body.classList.remove('locked')
+  //     }
+  //   })
+  // })
+
   // navbar breakpoint
   window.addEventListener('resize', () => {
     if (window.innerWidth > 991.98) {
@@ -25,8 +36,27 @@ function burgerMenu() {
     }
   })
 }
-
 burgerMenu()
+
+// Call this function, if we need to close the modal when the button is clicked
+function handleCloseModal() {
+  const burger = document.querySelector('.burger')
+  const menu = document.querySelector('.menu')
+  const body = document.querySelector('body')
+  const menuButtons = document.querySelectorAll('.menu__list-item')
+
+  menuButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+      if (menu.classList.contains('active')) {
+        menu.classList.remove('active')
+        burger.classList.remove('active-burger')
+        body.classList.remove('locked')
+      }
+    })
+  })
+}
+
+window.addEventListener('click', handleCloseModal)
 
 // Call this function, if we need to fix the menu when scrolling 
 function fixedNav() {

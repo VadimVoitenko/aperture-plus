@@ -5,84 +5,94 @@
     .container {
         padding: 0;
     }
-}
 
-.tools__content {
-    &-parts {
+    &__content {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(50%, 2fr));
 
         @media (max-width: $breakpoint992) {
             grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
         }
-    }
 
-    &-info {
-        padding: 173px 106px 153px 100px;
-        background: $blackColor;
+        &-info {
+            // padding: 173px 106px 153px 100px;
+            // background: $blackColor;
+            position: relative;
+            left: 50%;
+            display: flex;
+            margin: 0 15px;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            max-width: 510px;
+            transform: translateX(-50%);
 
-        @media (max-width: 600px) {
-            padding: 100px;
-            text-align: center;
-        }
+            @media (max-width: $breakpoint992) {
+                margin: 100px 0;
+            }
 
-        @media (max-width: 500px) {
-            padding: 50px;
-            text-align: center;
-        }
+            @media (max-width: $breakpoint640) {
+                margin: 70px 0;
+                padding: 0 15px;
+            }
 
-        & span {
-            margin-bottom: 6px;
-            display: block;
-            font-size: 14px;
-            letter-spacing: 2px;
-            line-height: 20px;
-            text-transform: uppercase;
-            transition: 1s;
-        }
+            @media (max-width: $breakpoint380) {
+                margin: 50px 0;
+            }
 
-        a:hover {
-            background: $blackColor;
-
-            span {
-                color: $whiteColor;
+            & span {
+                margin-bottom: 6px;
+                display: block;
+                font-size: 14px;
+                letter-spacing: 2px;
+                line-height: 20px;
+                text-transform: uppercase;
                 transition: 1s;
             }
+
+            a:hover {
+                background: $blackColor;
+
+                span {
+                    color: $whiteColor;
+                    transition: 1s;
+                }
+            }
         }
-    }
 
-    &-title {
-        margin-bottom: 14px;
-        font-size: 28px;
-        text-align: left;
+        &-title {
+            margin-bottom: 14px;
+            font-size: 28px;
+            text-align: left;
 
-        @media (max-width: 600px) {
-            text-align: center;
+            @media (max-width: 600px) {
+                text-align: center;
+            }
+
+            @media (max-width: $breakpoint480) {
+                font-size: 24px;
+            }
         }
 
-        @media (max-width: $breakpoint480) {
-            font-size: 24px;
+        &-description {
+            margin-bottom: 20px;
+            text-align: left;
+            color: $whiteColor;
+
+            @media (max-width: 600px) {
+                margin-bottom: 30px;
+                text-align: center;
+                line-height: 25px;
+            }
         }
-    }
 
-    &-description {
-        margin-bottom: 20px;
-        text-align: left;
-        color: $whiteColor;
-
-        @media (max-width: 600px) {
-            margin-bottom: 30px;
-            text-align: center;
-            line-height: 25px;
+        &-img img {
+            position: relative;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            transition: all 1.5s ease;
         }
-    }
-
-    &-img img {
-        position: relative;
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        transition: all 1.5s ease;
     }
 }
 

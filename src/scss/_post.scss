@@ -5,6 +5,13 @@
     width: 100%;
     margin: 0 auto;
 
+    & img {
+        max-height: 600px;
+        height: 100%;
+        width: 100%;
+        // object-fit: cover;
+    }
+
     &__info {
         position: absolute;
         top: 50%;

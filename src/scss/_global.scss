@@ -24,20 +24,15 @@
 
 // Button
 .btn {
-    color: $blackColor;
-    background: $whiteColor;
+    display: inline-block;
+    padding: 6px 6px;
     font-size: 16px;
     letter-spacing: .4px;
-    border-radius: 14px;
-    padding: 8px 8px;
-    transition: 0.5s;
+    color: $blackColor;
+    background: $whiteColor;
     border: 1px solid $whiteColor;
-
-//     & img{
-//         display: inline-block;
-//         top: -7px;
-//         left: -4px;
-//     }
+    border-radius: 14px;
+    transition: 0.5s;
 }
 
 // Body Locked

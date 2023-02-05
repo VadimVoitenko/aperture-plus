@@ -1,124 +1,142 @@
-.gallery__content {
-    padding: 120px 0 100px;
+.gallery {
 
-    @media (max-width: $breakpoint480) {
-        padding: 80px 0 40px;
-    }
-
-    @media (max-width: $breakpoint380){
-        padding: 60px 0 40px;
-    }
-
-    &-title {
-        margin-bottom: 15px;
-        font-size: 40px;
-
-        @media (max-width:$breakpoint992) {
-            font-size: 35px;
-        }
-
-        @media (max-width:$breakpoint480) {
-            font-size: 30px;
-        }
-    }
-
-    &-description {
-        margin-bottom: 40px;
-        font-size: 23px;
-
-        @media (max-width:$breakpoint992) {
-            font-size: 18px;
-        }
-
-        @media (max-width:$breakpoint480) {
-            font-size: 15px;
-        }
-    }
-}
-
-.gallery__list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(48%, 2fr));
-    gap: 16px;
-
-    @media (max-width: $breakpoint992) {
-        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
-        justify-items: center;
-    }
-}
-
-.gallery__item {
-    position: relative;
-
-    & img {
-        transition: 0.6s;
-    }
-
-    &:hover .gallery__item-img {
-        transform: scale(0.92);
-        transition: 0.6s;
-    }
-
-    &-info {
-        position: absolute;
-        left: 30px;
-        bottom: 30px;
-
-        @media (max-width: $breakpoint992) {
-            left: 50%;
-            transform: translateX(-50%);
-            text-align: center;
-            max-width: 470px;
-            width: 100%;
-        }
-
-        span {
-            color: $blackColor;
-            transition: .5s;
-        }
-
-        .btn-gallery {
-            @media(max-width: $breakpoint480) {
-                padding: 7px 4px;
-            }
-        }
-
-        .btn-gallery:hover {
-            background: $blackColor;
-            transition: .5s;
-
-            span {
-                color: $whiteColor;
-                transition: .5s;
-            }
-        }
-    }
-
-    &-title {
-        margin-bottom: 30px;
-        font-size: 14px;
-        line-height: 20px;
-        text-align: left;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-
-        @media (max-width: $breakpoint992) {
-            text-align: center;
-        }
-    }
-
-    &-text {
-        max-width: 515px;
-        width: 100%;
-        margin-bottom: 20px;
-        text-align: left;
-
-        @media (max-width: $breakpoint992) {
-            text-align: center;
-        }
+    //gallery__content
+    &__content {
+        padding: 120px 0 100px;
 
         @media (max-width: $breakpoint480) {
-            display: none;
+            padding: 80px 0 40px;
+        }
+
+        @media (max-width: $breakpoint380) {
+            padding: 60px 0 40px;
+        }
+
+        &-title {
+            margin-bottom: 15px;
+            font-size: 40px;
+
+            @media (max-width:$breakpoint992) {
+                font-size: 35px;
+            }
+
+            @media (max-width:$breakpoint480) {
+                font-size: 30px;
+            }
+        }
+
+        &-description {
+            margin-bottom: 40px;
+            font-size: 23px;
+
+            @media (max-width:$breakpoint992) {
+                font-size: 18px;
+            }
+
+            @media (max-width:$breakpoint480) {
+                font-size: 15px;
+            }
+        }
+    }
+
+    //gallery__list
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(48%, 2fr));
+        gap: 16px;
+
+        @media (max-width: $breakpoint992) {
+            grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+            justify-items: center;
+        }
+    }
+
+    //gallery__item
+    &__item {
+        position: relative;
+
+        & img {
+            transition: 0.6s;
+        }
+
+        &:hover .gallery__item-img {
+            transform: scale(0.92);
+            transition: 0.6s;
+        }
+
+        &-info {
+            position: absolute;
+            left: 30px;
+            bottom: 30px;
+
+            @media (max-width: $breakpoint992) {
+                left: 50%;
+                transform: translateX(-50%);
+                text-align: center;
+                max-width: 470px;
+                width: 100%;
+            }
+
+            .btn-gallery {
+                position: relative;
+                transition: 0.5s;
+
+                @media(max-width: $breakpoint480) {
+                    padding: 7px 4px;
+                }
+
+                &:after {
+                    content: '«';
+                    position: absolute;
+                    opacity: 0;
+                    top: 14px;
+                    left: 45px;
+                    transition: 0.5s;
+                }
+
+                &:hover {
+                    background: $blackColor;
+
+                    &:after {
+                        color: $whiteColor;
+                        opacity: 1;
+                        left: 15px;
+                    }
+
+                    span {
+                        color: $whiteColor;
+                        transition: .5s;
+                    }
+                }
+            }
+        }
+
+        &-title {
+            margin-bottom: 30px;
+            font-size: 14px;
+            line-height: 20px;
+            text-align: left;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+
+            @media (max-width: $breakpoint992) {
+                text-align: center;
+            }
+        }
+
+        &-text {
+            max-width: 515px;
+            width: 100%;
+            margin-bottom: 20px;
+            text-align: left;
+
+            @media (max-width: $breakpoint992) {
+                text-align: center;
+            }
+
+            @media (max-width: $breakpoint480) {
+                display: none;
+            }
         }
     }
 }

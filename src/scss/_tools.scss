@@ -40,22 +40,51 @@
                 margin: 50px 0;
             }
 
-            & span {
-                margin-bottom: 6px;
-                display: block;
-                font-size: 14px;
-                letter-spacing: 2px;
-                line-height: 20px;
-                text-transform: uppercase;
-                transition: 1s;
-            }
+            // & span {
+            //     margin-bottom: 6px;
+            //     display: block;
+            //     font-size: 14px;
+            //     letter-spacing: 2px;
+            //     line-height: 20px;
+            //     text-transform: uppercase;
+            //     transition: 1s;
+            // }
 
-            a:hover {
-                background: $blackColor;
+            // a:hover {
+            //     background: $blackColor;
 
-                span {
-                    color: $whiteColor;
-                    transition: 1s;
+            //     span {
+            //         color: $whiteColor;
+            //         transition: 1s;
+            //     }
+            // }
+
+            .btn-tools {
+                position: relative;
+                transition: 0.5s;
+
+                &:after {
+                    content: '«';
+                    position: absolute;
+                    opacity: 0;
+                    top: 14px;
+                    left: 45px;
+                    transition: 0.5s;
+                }
+
+                &:hover {
+                    background: $blackColor;
+
+                    &:after {
+                        color: $whiteColor;
+                        opacity: 1;
+                        left: 15px;
+                    }
+
+                    span {
+                        color: $whiteColor;
+                        transition: 0.5s;
+                    }
                 }
             }
         }

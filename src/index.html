@@ -54,19 +54,20 @@
     </main>
     <!-- Footer -->
     @@include('./html/_footer.html')
-</body>
 
-<!-- Custom JS files -->
-<script src="./js/scripts.min.js"></script>
-<!-- AOS Library -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init({
-        disable: function () {
-            var maxWidth = 1040;
-            return window.innerWidth < maxWidth;
-        }
-    });
-</script>
+    <!-- Custom JS files -->
+    <script src="./js/scripts.min.js"></script>
+    <!-- AOS Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            disable: function () {
+                var maxWidth = 1040;
+                return window.innerWidth < maxWidth;
+            }
+        });
+    </script>
+</body>
 
 </html>

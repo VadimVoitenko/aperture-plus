@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Aperture Studios">
+    <meta name="keywords" content="Photographer, Filmmaker">
+    <meta name="author" content="Developed by Vadim Voitenko">
+    <meta name="theme-color" content="#fff">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aperture+</title>
+    <link rel="stylesheet" href="./css/style.min.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+
+    <!-- RemixIcon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+
+    <!-- AOS Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+    <!-- Touch Icons - iOS and Android 2.1+ 180x180 pixels in size. -->
+    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+
+    <!-- Firefox, Chrome, Safari, IE 11+ and Opera. 196x196 pixels in size. -->
+    <link rel="icon" href="./img/icon-site.svg" type="image/svg">
+</head>
+
+<body class="main__body">
+    <!-- Header -->
+    <header>
+    <nav>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo" data-aos="fade-right">
+                    <a href="#banner">
+                        <img src="../img/logo.svg" alt="Aperture+ Logo">
+                    </a>
+                </div>
+                <div class="menu" data-aos="fade-left">
+                    <ul class="menu__list">
+                        <li class="menu__list-item">
+                            <a href="#gallery" class="menu__list-link" title="Business areas">Business areas</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a href="#post-1" class="menu__list-link" title="Featured images">Featured images
+                            </a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a href="#tools" class="menu__list-link" title="Gear cage">Gear cage
+                            </a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a href="#service" class="menu__list-link" title="Contact">Contact
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="" class="modal__btn menu__btn">Get template
+                    </a>
+                </div>
+                <div class="burger">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div class="modal__wrapper">
+            <div class="modal">
+                <div class="modal__close">
+                    <i class="ri-close-line"></i>
+                </div>
+                <div class="modal__title"><span>Order</span></div>
+                <form method="post">
+                    <div class="modal__form">
+                        <div class="modal__form-item">
+                            <label for="name">First Name<sup>*</sup></label>
+                            <input type="text" name="name" id="name" required maxlength="10" autocomplete="name"
+                                placeholder=" ">
+                        </div>
+                        <div class="modal__form-item">
+                            <label for="name">Last Name</label>
+                            <input type="text" name="name" id="lname" maxlength="15" autocomplete="name"
+                                placeholder=" ">
+                        </div>
+                        <div class="modal__form-item">
+                            <label for="email">Email<sup>*</sup></label>
+                            <input type="email" name="email" id="email" required maxlength="27" autocomplete="email"
+                                inputmode="email" autocapitalize="off" placeholder=" ">
+                        </div>
+                        <div class="modal__form-item">
+                            <label for="phone">Phone<sup>*</sup></label>
+                            <input type="text" name="phone" id="phone" required maxlength="19" autocomplete="tel"
+                                inputmode="tel" placeholder=" " aria-labelledby="phone">
+                        </div>
+                        <button type="submit">Get</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+</header>
+    <!-- Banner Section -->
+    <section class="banner" id="banner">
+    <div class="container" >
+        <div class="banner__content">
+            <span class="banner__content-notice" data-aos="fade-up">Photographer & Filmmaker</span>
+            <h1 class="banner__content-title" data-aos="fade-up">Aperture Studios</h1>
+            <p class="banner__content-text" data-aos="fade-up">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+                tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae
+                erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique
+                posuere.
+            </p>
+            <ul class="composition__list" data-aos="fade-up">
+                <li class="composition__item">
+                    <img src="../img/addinfo-time.svg" alt="time">
+                    <p>1/2000s</p>
+                </li>
+                <li class="composition__item">
+                    <img src="../img/addinfo-aperture.svg" alt="aperture">
+                    <p>f/11</p>
+                </li>
+                <li class="composition__item">
+                    <img src="../img/addinfo-iso.svg" alt="iso">
+                    <p>100</p>
+                </li>
+                <li class="composition__item">
+                    <img src="../img/addinfo-location.svg" alt="location">
+                    <p>Iceland</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+    <!-- Main Page -->
+    <main>
+        <!-- Gallery Section -->
+        <section class="gallery" id="gallery">
+    <div class="container">
+        <div class="gallery__content">
+            <h2 class="gallery__content-title" data-aos="fade-up">What we do.</h2>
+            <p class="gallery__content-description" data-aos="fade-up">The areas that we're specialized in.</p>
+            <div class="gallery__list">
+                <div class="gallery__item" data-aos="fade-up">
+                    <img src="../img/gallery-product.jpg" alt="Product Photography" class="gallery__item-img" id="gallery-product">
+                    <div class="gallery__item-info" data-aos="fade-down">
+                        <h3 class="gallery__item-title">Product Photography</h3>
+                        <p class="gallery__item-text">Cras commodo consequat orci, in convallis risus egestas non.
+                            Nullaefficitur auctor hendrerit. Etiam ut orci varius, faucibus libero ac, cursus quam.</p>
+                        <a href="#" class="btn btn-gallery">
+                            <img src="../img/frame.svg" alt="frame">
+                            <span>Read more</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery__item" data-aos="fade-up">
+                    <img src="../img/gallery-architecture.jpg" alt="Architecture Photography" class="gallery__item-img" id="gallery-architecture">
+                    <div class="gallery__item-info" data-aos="fade-down">
+                        <h3 class="gallery__item-title">Architecture Photography</h3>
+                        <p class="gallery__item-text">Aenean porta neque eget consequat fringilla. Vestibulum ultrices,
+                            orci nec egestas pharetra, ligula est semper enim, nec auctor sapien leo nec purus. Fusce
+                            tincidunt aliquet sapien, sit amet rhoncus leo imperdiet nec.</p>
+                        <a href="#" class="btn btn-gallery">
+                            <img src="../img/frame.svg" alt="frame">
+                            <span>Read more</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery__item" data-aos="fade-up">
+                    <img src="../img/gallery-drone.jpg" alt="Drone Photography" class="gallery__item-img" id="gallery-drone">
+                    <div class="gallery__item-info" data-aos="fade-down">
+                        <h3 class="gallery__item-title">Drone Photography</h3>
+                        <p class="gallery__item-text">Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt.
+                            Duis tristique sed lorem a vestibulum. Cras commodo consequat orci, in convallis risus
+                            egestas non. Nulla efficitur auctor hendrerit. Etiam ut orci varius, faucibus libero ac,
+                            cursus quam.</p>
+                        <a href="#" class="btn btn-gallery">
+                            <img src="../img/frame.svg" alt="frame">
+                            <span>Read more</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery__item" data-aos="fade-up">
+                    <img src="../img/gallery-wildlife.jpg" alt="Wildlife Photography" class="gallery__item-img" id="gallery-wildlife">
+                    <div class="gallery__item-info" data-aos="fade-down">
+                        <h3 class="gallery__item-title">Wildlife Photography</h3>
+                        <p class="gallery__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                            scelerisque aliquam odio et faucibus. Nulla rhoncus feugiat eros quis consectetur. Morbi
+                            neque ex, condimentum dapibus congue et, vulputate ut ligula. Vestibulum sit amet urna
+                            turpis.</p>
+                        <a href="#" class="btn btn-gallery">
+                            <img src="../img/frame.svg" alt="frame">
+                            <span>Read more</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <!-- First Post Section -->
+        <section class="post" id="post-1" data-aos="zoom-in" data-aos-delay="200">
+    <img src="../img/mountain.png" alt="Sunset At Mount Fuji">
+    <div class="post__info">
+        <p class="post__title">Sunset at Mount Fuji</p>
+        <p class="post__text">Duis tristique sed lorem a vestibulum. Cras commodo consequat orci, in
+            convallis
+            risus egestas non.</p>
+    </div>
+    <ul class="composition__list">
+        <li class="composition__item">
+            <img src="../img/addinfo-time.svg" alt="time">
+            <p>1''</p>
+        </li>
+        <li class="composition__item">
+            <img src="../img/addinfo-aperture.svg" alt="aperture">
+            <p>f/16</p>
+        </li>
+        <li class="composition__item">
+            <img src="../img/addinfo-iso.svg" alt="iso">
+            <p>400</p>
+        </li>
+        <li class="composition__item">
+            <img src="../img/addinfo-location.svg" alt="location">
+            <p>Japan</p>
+        </li>
+    </ul>
+</section>
+        <!-- Tools Section -->
+        <section class="tools" id="tools">
+    <div class="container">
+        <div class="tools__content">
+            <div class="tools__content-info">
+                <span data-aos="fade-up">The Gear cage</span>
+                <h3 class="tools__content-title" data-aos="fade-up">The tools that we use.</h3>
+                <p class="tools__content-description" data-aos="fade-up">The say that "no place is boring if
+                    you've had a good night's
+                    sleep and have a pocket full of unexposed film". While we don't shoot (a lot) of film these days
+                    —
+                    these are the tools that we actually use everyday to capture the amazing things around us.</p>
+                <a href="#" class="btn btn-tools" data-aos="fade-up">
+                    <img src="../img/frame.svg" alt="frame">
+                    <span>Check it out</span>
+                </a>
+            </div>
+            <div class="tools__content-img" data-aos="fade-up">
+                <img src="../img/tools.png" alt="tools" class="tools__img">
+            </div>
+        </div>
+
+    </div>
+</section>
+        <!-- Second Post Section -->
+        <section class="post" id="post-2" data-aos="zoom-in" data-aos-delay="200">
+    <img src="../img/leaf.png" alt="Monstera Leafs">
+    <div class="post__info">
+        <p class="post__title">Monstera Leafs</p>
+        <p class="post__text">Vestibulum sit amet urna turpis. Mauris euismod elit et nisi ultrices, ut
+            faucibus orci tincidunt.</p>
+    </div>
+    <ul class="composition__list">
+        <li class="composition__item">
+            <img src="../img/addinfo-time.svg" alt="time">
+            <p>1/400s</p>
+        </li>
+        <li class="composition__item">
+            <img src="../img/addinfo-aperture.svg" alt="aperture">
+            <p>f/3.5</p>
+        </li>
+        <li class="composition__item">
+            <img src="../img/addinfo-iso.svg" alt="iso">
+            <p>100</p>
+        </li>
+        <li class="composition__item">
+            <img src="../img/addinfo-location.svg" alt="location">
+            <p>Costa</p>
+        </li>
+    </ul>
+</section>
+        <!-- Clients Section -->
+        <section class="clients" id="clients">
+    <div class="container">
+        <div class="clients__content">
+            <h3 class="clients__content-title" data-aos="fade-up">Past clients</h3>
+            <p class="clients__content-description" data-aos="fade-down">Trusted by your favourite companies</p>
+            <div class="swiper-container" data-aos="fade-left">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="image-slider__image">
+                            <img src="../img/slide-1.svg" alt="slide 1">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="image-slider__image">
+                            <img src="../img/slide-2.svg" alt="slide 2">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="image-slider__image">
+                            <img src="../img/slide-3.svg" alt="slide 3">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="image-slider__image">
+                            <img src="../img/slide-4.svg" alt="slide 4">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="image-slider__image">
+                            <img src="../img/slide-5.svg" alt="slide 5">
+                        </div>
+                    </div>
+                </div>
+                <!--Add Pagination-->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+</section>
+        <!-- Third Post Section -->
+        <section class="post" id="post-3" data-aos="zoom-in" data-aos-delay="200">
+    <img src="../img/night-sky.png" alt="Star fall in the Himalayas">
+    <div class="post__info">
+        <p class="post__title">Star fall in the Himalayas</p>
+        <p class="post__text">Nulla rhoncus feugiat eros quis consectetur. Morbi neque ex, condimentum
+            dapibus congue et, vulputate ut ligula.</p>
+    </div>
+    <ul class="composition__list">
+        <li class="composition__item">
+            <img src="../img/addinfo-time.svg" alt="time">
+            <p>6"</p>
+        </li>
+        <li class="composition__item">
+            <img src="../img/addinfo-aperture.svg" alt="aperture">
+            <p>f/11</p>
+        </li>
+        <li class="composition__item">
+            <img src="../img/addinfo-iso.svg" alt="iso">
+            <p>800</p>
+        </li>
+        <li class="composition__item">
+            <img src="../img/addinfo-location.svg" alt="location">
+            <p>Nepal</p>
+        </li>
+    </ul>
+</section>
+        <!-- Service Section -->
+        <section class="service" id="service">
+    <div class="container">
+        <div class="service__content">
+            <h3 class="service__content-title" data-aos="flip-left">Need help with photography or videography?</h3>
+            <p class="service__content-notice" data-aos="flip-right">We're here for you!</p>
+            <a href="#" class="btn btn-service">
+                <img src="../img/frame.svg" alt="frame">
+                <span>Get in touch</span>
+            </a>
+        </div>
+    </div>
+</section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+    <div class="container">
+        <div class="footer__content" data-aos="fade-down">
+            <div class="footer__menu">
+                <div class="footer__menu-info">
+                    <a href="#banner" class="footer__menu-logo">
+                        <img src="../img/logo.svg" alt="Aperture+ Logo">
+                    </a>
+                    <div class="footer__menu-text">
+                        <p>Photographers & videographers capturing the world around us.</p>
+                    </div>
+                </div>
+                <div class="footer__list">
+                    <strong class="footer__list-title">Business areas</strong>
+                    <ul class="footer__list-items">
+                        <li class="footer__list-item">
+                            <a href="#gallery-product">Product Photography</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#gallery-architecture">Architecture Photography</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#gallery-drone">Drone Photography</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#gallery-wildlife">Wildlife Photography</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__list">
+                    <strong class="footer__list-title">Pages</strong>
+                    <ul class="footer__list-items">
+                        <li class="footer__list-item">
+                            <a href="#tools">Gear cage</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#post-1">Featured images</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#service">Contact</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#">Style guide</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#">Instructions</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#">Changelog</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="footer__subscribe">
+                <div class="footer__subscribe-info">
+                    <h4 class="footer__subscribe-title">Subscribe to our newsletter</h4>
+                    <p class="footer__subscribe-description">Read about all the things we do.</p>
+                </div>
+                <!-- <form action="GET"> -->
+                <form class="footer__subscribe-form">
+                    <label for="email" id="email">
+                        <input type="email" name="email" maxlength="27" autocomplete="email" autocapitalize="off"
+                            inputmode="email" placeholder="Enter your email">
+                    </label>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+            <hr>
+            <div class="footer__copyright">
+                <span class="footer__copyright-text">© Aperture Photography, Inc. All rights
+                    reserved. Licensing.
+                </span>
+                <ul class="footer__copyright-items">
+                    <li>
+                        <a href="https://twitter.com/VoitenkoVadim" target="_blank">
+                            <span class="ri-twitter-fill" aria-hidden="true"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/vadim.vo1tenko/" target="_blank">
+                            <span class="ri-instagram-line" aria-hidden="true"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/profile.php?id=100008627808756" target="_blank">
+                            <span class="ri-facebook-fill" aria-hidden="true"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <!-- Custom JS files -->
+    <script src="./js/scripts.min.js"></script>
+    <!-- AOS Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            disable: function () {
+                var maxWidth = 1040;
+                return window.innerWidth < maxWidth;
+            }
+        });
+    </script>
+</body>
+
+</html>

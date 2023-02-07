@@ -25,12 +25,45 @@
                             </a>
                         </li>
                     </ul>
-                    <a href="#" class="menu__btn">Get template
+                    <a href="" class="modal__btn menu__btn">Get template
                     </a>
                 </div>
                 <div class="burger">
                     <span></span>
                 </div>
+            </div>
+        </div>
+        <div class="modal__wrapper">
+            <div class="modal">
+                <div class="modal__close">
+                    <i class="ri-close-line"></i>
+                </div>
+                <div class="modal__title"><span>Order</span></div>
+                <form method="post">
+                    <div class="modal__form">
+                        <div class="modal__form-item">
+                            <label for="name">First Name<sup>*</sup></label>
+                            <input type="text" name="name" id="name" required maxlength="10" autocomplete="name"
+                                placeholder=" ">
+                        </div>
+                        <div class="modal__form-item">
+                            <label for="name">Last Name</label>
+                            <input type="text" name="name" id="lname" maxlength="15" autocomplete="name"
+                                placeholder=" ">
+                        </div>
+                        <div class="modal__form-item">
+                            <label for="email">Email<sup>*</sup></label>
+                            <input type="email" name="email" id="email" required maxlength="27" autocomplete="email"
+                                inputmode="email" autocapitalize="off" placeholder=" ">
+                        </div>
+                        <div class="modal__form-item">
+                            <label for="phone">Phone<sup>*</sup></label>
+                            <input type="text" name="phone" id="phone" required maxlength="19" autocomplete="tel"
+                                inputmode="tel" placeholder=" " aria-labelledby="phone">
+                        </div>
+                        <button type="submit">Get</button>
+                    </div>
+                </form>
             </div>
         </div>
     </nav>

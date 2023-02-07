@@ -57,10 +57,11 @@
                     <h4 class="footer__subscribe-title">Subscribe to our newsletter</h4>
                     <p class="footer__subscribe-description">Read about all the things we do.</p>
                 </div>
-                <form class="footer__subscribe-form">
-                    <label id="email">
-                        <input type="email" name="email" maxlength="27" autocomplete="email"
-                            autocapitalize="off" placeholder="Enter your email">
+                <!-- <form action="GET"> -->
+                <form class="footer__subscribe-form" data-aos="fade-right">
+                    <label for="email" id="email">
+                        <input type="email" name="email" maxlength="27" autocomplete="email" autocapitalize="off"
+                            inputmode="email" placeholder="Enter your email">
                     </label>
                     <button type="submit">Send</button>
                 </form>

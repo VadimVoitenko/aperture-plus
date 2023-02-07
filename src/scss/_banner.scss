@@ -1,66 +1,66 @@
 // Banner Section
 .banner {
-    position: relative;
-    height: 100vh;
-    background-image: url(../img/banner.webp);
-    background-position: center;
-    background-size: cover;
+  position: relative;
+  height: 100vh;
+  background-image: url(../img/banner.webp);
+  background-position: center;
+  background-size: cover;
 
-    &__content {
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        max-width: 1360px;
-        width: 100%;
-        text-align: center;
-        transform: translateX(-50%);
+  &__content {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    max-width: 1360px;
+    width: 100%;
+    text-align: center;
+    transform: translateX(-50%);
 
-        &-notice {
-            display: block;
-            font-size: 14px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
+    &-notice {
+      display: block;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
 
-            @media(max-width: $breakpoint480) {
-                font-size: 12px;
-            }
-        }
-
-        &-title {
-            margin-bottom: 20px;
-            font-size: 54px;
-
-            @media(max-width: $breakpoint480) {
-                font-size: 40px;
-            }
-        }
-
-        &-text {
-            max-width: 580px;
-            margin: 0 auto;
-            margin-bottom: 30px;
-
-            @media (max-width: $breakpoint640) {
-                padding: 0 15px;
-            }
-        }
+      @media (max-width: $breakpoint480) {
+        font-size: 12px;
+      }
     }
 
-    .composition__list {
-        position: absolute;
-        bottom: 0px;
-        right: 10px;
-        display: flex;
-        gap: 30px;
+    &-title {
+      margin-bottom: 20px;
+      font-size: 54px;
 
-        @media (max-width: $breakpoint768) {
-            right: 50%;
-            transform: translateX(50%);
-        }
-
-        .composition__item {
-            display: inline-flex;
-            gap: 5px;
-        }
+      @media (max-width: $breakpoint480) {
+        font-size: 40px;
+      }
     }
+
+    &-text {
+      max-width: 580px;
+      margin: 0 auto;
+      margin-bottom: 30px;
+
+      @media (max-width: $breakpoint640) {
+        padding: 0 15px;
+      }
+    }
+  }
+
+  .composition__list {
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+    display: flex;
+    gap: 30px;
+
+    @media (max-width: $breakpoint768) {
+      right: 50%;
+      transform: translateX(50%);
+    }
+
+    .composition__item {
+      display: inline-flex;
+      gap: 5px;
+    }
+  }
 }

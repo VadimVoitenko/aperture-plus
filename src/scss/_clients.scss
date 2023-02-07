@@ -1,58 +1,58 @@
 // Clients Section
 .clients {
-    background: $blackColor;
+  background: $blackColor;
 }
 
 .clients__content {
-    max-width: 1600px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 120px 0 140px 0;
-    overflow: hidden;
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 120px 0 140px 0;
+  overflow: hidden;
+
+  @media (max-width: $breakpoint992) {
+    padding: 80px 0;
+  }
+
+  @media (max-width: $breakpoint480) {
+    padding: 50px 0;
+  }
+
+  &-title {
+    margin-bottom: 15px;
+    font-size: 40px;
 
     @media (max-width: $breakpoint992) {
-        padding: 80px 0;
+      margin-bottom: 10px;
+      font-size: 30px;
+    }
+
+    @media (max-width: $breakpoint380) {
+      margin-bottom: 10px;
+      font-size: 24px;
+    }
+  }
+
+  &-description {
+    margin-bottom: 45px;
+    font-size: 24px;
+    line-height: 30px;
+
+    @media (max-width: $breakpoint992) {
+      font-size: 20px;
     }
 
     @media (max-width: $breakpoint480) {
-        padding: 50px 0;
+      margin-bottom: 20px;
+      font-size: 16px;
     }
-
-    &-title {
-        margin-bottom: 15px;
-        font-size: 40px;
-
-        @media (max-width: $breakpoint992) {
-            margin-bottom: 10px;
-            font-size: 30px;
-        }
-
-        @media (max-width: $breakpoint380) {
-            margin-bottom: 10px;
-            font-size: 24px;
-        }
-    }
-
-    &-description {
-        margin-bottom: 45px;
-        font-size: 24px;
-        line-height: 30px;
-
-        @media (max-width: $breakpoint992) {
-            font-size: 20px;
-        }
-
-        @media (max-width: $breakpoint480) {
-            margin-bottom: 20px;
-            font-size: 16px;
-        }
-    }
+  }
 }
 
 .swiper-wrapper {
-    align-items: center;
+  align-items: center;
 }
 
 .swiper-slide {
-    text-align: center;
+  text-align: center;
 }

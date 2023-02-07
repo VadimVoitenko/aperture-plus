@@ -1,119 +1,119 @@
 // Tools Section
 .tools {
-    background: $blackColor;
+  background: $blackColor;
 
-    .container {
-        padding: 0;
+  .container {
+    padding: 0;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50%, 2fr));
+
+    @media (max-width: $breakpoint992) {
+      grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
     }
 
-    &__content {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(50%, 2fr));
+    &-info {
+      position: relative;
+      left: 50%;
+      display: flex;
+      margin: 0 15px;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      max-width: 510px;
+      transform: translateX(-50%);
 
-        @media (max-width: $breakpoint992) {
-            grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+      @media (max-width: $breakpoint992) {
+        margin: 100px 0;
+      }
+
+      @media (max-width: $breakpoint640) {
+        margin: 70px 0;
+        padding: 0 15px;
+      }
+
+      @media (max-width: $breakpoint380) {
+        margin: 50px 0;
+      }
+
+      .btn-tools {
+        position: relative;
+        transition: 0.5s;
+
+        &:after {
+          content: "«";
+          position: absolute;
+          opacity: 0;
+          top: 14px;
+          left: 45px;
+          transition: 0.5s;
         }
 
-        &-info {
-            position: relative;
-            left: 50%;
-            display: flex;
-            margin: 0 15px;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            max-width: 510px;
-            transform: translateX(-50%);
+        &:hover {
+          background: $blackColor;
 
-            @media (max-width: $breakpoint992) {
-                margin: 100px 0;
-            }
-
-            @media (max-width: $breakpoint640) {
-                margin: 70px 0;
-                padding: 0 15px;
-            }
-
-            @media (max-width: $breakpoint380) {
-                margin: 50px 0;
-            }
-
-            .btn-tools {
-                position: relative;
-                transition: 0.5s;
-
-                &:after {
-                    content: '«';
-                    position: absolute;
-                    opacity: 0;
-                    top: 14px;
-                    left: 45px;
-                    transition: 0.5s;
-                }
-
-                &:hover {
-                    background: $blackColor;
-
-                    &:after {
-                        color: $whiteColor;
-                        opacity: 1;
-                        left: 15px;
-                    }
-
-                    span {
-                        color: $whiteColor;
-                        transition: 0.5s;
-                    }
-                }
-            }
-        }
-
-        &-notice{
-            text-transform: uppercase;
-            font-size: 13px;
-        }
-
-        &-title {
-            margin-bottom: 14px;
-            font-size: 28px;
-            text-align: left;
-
-            @media (max-width: 600px) {
-                text-align: center;
-            }
-
-            @media (max-width: $breakpoint480) {
-                font-size: 24px;
-            }
-        }
-
-        &-description {
-            margin-bottom: 20px;
-            text-align: left;
+          &:after {
             color: $whiteColor;
+            opacity: 1;
+            left: 15px;
+          }
 
-            @media (max-width: 600px) {
-                margin-bottom: 30px;
-                text-align: center;
-                line-height: 25px;
-            }
+          span {
+            color: $whiteColor;
+            transition: 0.5s;
+          }
         }
-
-        &-img img {
-            position: relative;
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-            transition: all 1.5s ease;
-        }
+      }
     }
+
+    &-notice {
+      text-transform: uppercase;
+      font-size: 13px;
+    }
+
+    &-title {
+      margin-bottom: 14px;
+      font-size: 28px;
+      text-align: left;
+
+      @media (max-width: 600px) {
+        text-align: center;
+      }
+
+      @media (max-width: $breakpoint480) {
+        font-size: 24px;
+      }
+    }
+
+    &-description {
+      margin-bottom: 20px;
+      text-align: left;
+      color: $whiteColor;
+
+      @media (max-width: 600px) {
+        margin-bottom: 30px;
+        text-align: center;
+        line-height: 25px;
+      }
+    }
+
+    &-img img {
+      position: relative;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      transition: all 1.5s ease;
+    }
+  }
 }
 
 .btn {
-    & span {
-        display: inline-block;
-        color: $blackColor;
-        text-transform: none;
-        letter-spacing: 0.4px;
-    }
+  & span {
+    display: inline-block;
+    color: $blackColor;
+    text-transform: none;
+    letter-spacing: 0.4px;
+  }
 }

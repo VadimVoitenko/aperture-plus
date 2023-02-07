@@ -1,76 +1,76 @@
 .service {
-    background: $blackColor;
+  background: $blackColor;
 
-    &__content {
-        padding: 115px 0 110px;
-        text-align: center;
+  &__content {
+    padding: 115px 0 110px;
+    text-align: center;
 
-        &-title {
-            max-width: 570px;
-            width: 100%;
-            margin: 0 auto;
-            margin-bottom: 15px;
-            font-size: 40px;
-            line-height: 42px;
+    &-title {
+      max-width: 570px;
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 15px;
+      font-size: 40px;
+      line-height: 42px;
 
-            @media (max-width: $breakpoint992) {
-                font-size: 30px;
-            }
+      @media (max-width: $breakpoint992) {
+        font-size: 30px;
+      }
 
-            @media (max-width: $breakpoint640) {
-                font-size: 24px;
-            }
+      @media (max-width: $breakpoint640) {
+        font-size: 24px;
+      }
 
-            @media (max-width: $breakpoint480) {
-                font-size: 20px;
-            }
-        }
-
-        &-notice {
-            margin-bottom: 42px;
-            font-size: 24px;
-
-            @media (max-width: $breakpoint992) {
-                margin-bottom: 30px;
-                font-size: 20px;
-            }
-
-            @media (max-width: $breakpoint640) {
-                font-size: 20px;
-            }
-
-            @media (max-width: $breakpoint480) {
-                font-size: 18px;
-            }
-        }
-
-        .btn-service {
-            position: relative;
-            transition: 0.5s;
-
-            &:after {
-                content: '«';
-                position: absolute;
-                opacity: 0;
-                top: 14px;
-                left: 45px;
-                transition: 0.5s;
-            }
-
-            &:hover {
-                background: $blackColor;
-
-                &:after {
-                    color: $whiteColor;
-                    opacity: 1;
-                    left: 15px;
-                }
-
-                span {
-                    color: $whiteColor;
-                    transition: .5s;
-                }
-            }
-        }
+      @media (max-width: $breakpoint480) {
+        font-size: 20px;
+      }
     }
+
+    &-notice {
+      margin-bottom: 42px;
+      font-size: 24px;
+
+      @media (max-width: $breakpoint992) {
+        margin-bottom: 30px;
+        font-size: 20px;
+      }
+
+      @media (max-width: $breakpoint640) {
+        font-size: 20px;
+      }
+
+      @media (max-width: $breakpoint480) {
+        font-size: 18px;
+      }
+    }
+
+    .btn-service {
+      position: relative;
+      transition: 0.5s;
+
+      &:after {
+        content: "«";
+        position: absolute;
+        opacity: 0;
+        top: 14px;
+        left: 45px;
+        transition: 0.5s;
+      }
+
+      &:hover {
+        background: $blackColor;
+
+        &:after {
+          color: $whiteColor;
+          opacity: 1;
+          left: 15px;
+        }
+
+        span {
+          color: $whiteColor;
+          transition: 0.5s;
+        }
+      }
+    }
+  }
 }

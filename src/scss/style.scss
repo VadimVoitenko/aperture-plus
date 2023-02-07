@@ -1,21 +1,18 @@
 // Global SCSS-files imports
-@import './vars';
-@import './reset';
-@import './global';
+@import "./vars";
+@import "./reset";
+@import "./global";
 
 // Sections or Pages SCSS-files imports
-@import './header';
-@import './modal';
-@import './banner';
-@import './gallery';
-@import './post';
-@import './tools';
-@import './clients';
-@import './service';
-@import './footer';
-
-//RemixIcon
-// @import './remixicon/remixicon.css';
+@import "./header";
+@import "./modal";
+@import "./banner";
+@import "./gallery";
+@import "./post";
+@import "./tools";
+@import "./clients";
+@import "./service";
+@import "./footer";
 
 // Libs
-@import './libs/swiper';
+@import "./libs/swiper";

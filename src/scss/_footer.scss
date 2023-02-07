@@ -1,221 +1,219 @@
-// Footer
+// Footer Section
 footer {
-    background: $blackColor;
+  background: $blackColor;
 
-    .container {
-        max-width: 1440px;
-        width: 100%;
-    }
+  .container {
+    max-width: 1440px;
+    width: 100%;
+  }
 }
 
 footer .footer__content {
-    padding: 100px 0;
+  padding: 100px 0;
 
-    @media (max-width: $breakpoint1024) {
-        padding: 50px 0;
-    }
+  @media (max-width: $breakpoint1024) {
+    padding: 50px 0;
+  }
 
-    @media (max-width: $breakpoint768) {
-        padding: 40px 0;
-    }
+  @media (max-width: $breakpoint768) {
+    padding: 40px 0;
+  }
 
-    @media (max-width: $breakpoint640) {
-        padding: 10px 0;
-    }
+  @media (max-width: $breakpoint640) {
+    padding: 10px 0;
+  }
 }
-
 .footer__menu {
-    display: grid;
-    grid-template-columns: 62% 19% 17%;
-    gap: 15px;
+  display: grid;
+  grid-template-columns: 62% 19% 17%;
+  gap: 15px;
 
-    @media (max-width: $breakpoint992) {
-        grid-template-columns: 50% 28% 20%;
-    }
+  @media (max-width: $breakpoint992) {
+    grid-template-columns: 50% 28% 20%;
+  }
+
+  @media (max-width: $breakpoint768) {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  }
+
+  &-logo img {
+    margin-bottom: 20px;
+  }
+
+  &-text p {
+    font-size: 13px;
+    text-align: left;
 
     @media (max-width: $breakpoint768) {
-        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+      margin-bottom: 20px;
+      font-size: 16px;
     }
-
-    &-logo img {
-        margin-bottom: 20px;
-    }
-
-    &-text p {
-        font-size: 13px;
-        text-align: left;
-
-        @media (max-width: $breakpoint768) {
-            margin-bottom: 20px;
-            font-size: 16px;
-        }
-    }
+  }
 }
 
 .footer__list {
-    @media (max-width:$breakpoint768 ) {
-        margin-bottom: 20px;
+  @media (max-width: $breakpoint768) {
+    margin-bottom: 20px;
+  }
+
+  &-title {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: $grayColor;
+
+    @media (max-width: $breakpoint768) {
+      margin-top: 15px;
     }
+  }
 
-    &-title {
-        color: $grayColor;
-        letter-spacing: 2px;
-        text-transform: uppercase;
+  &-item {
+    margin-top: 10px;
 
-        @media (max-width: $breakpoint768) {
-            margin-top: 15px;
-        }
+    @media (max-width: $breakpoint768) {
+      margin-top: 20px;
     }
+  }
 
-    &-item {
-        margin-top: 10px;
+  &-item a {
+    line-height: 20px;
+    text-align: left;
+    color: $whiteColor;
+    transition: 0.5s ease;
 
-        @media (max-width: $breakpoint768) {
-            margin-top: 20px;
-        }
+    &:hover {
+      color: #777777;
+      transition: 0.5s ease;
     }
-
-    &-item a {
-        text-align: left;
-        color: $whiteColor;
-        line-height: 20px;
-        transition: .5s ease;
-
-        &:hover {
-            color: #777777;
-            transition: .5s ease;
-        }
-    }
+  }
 }
 
 hr {
-    margin: 40px 0;
-    text-align: center;
-    color: $whiteColor;
-    border: none;
-    border-top: 2px solid $whiteColor;
-    overflow: visible;
+  margin: 40px 0;
+  text-align: center;
+  color: $whiteColor;
+  border: none;
+  border-top: 2px solid $whiteColor;
+  overflow: visible;
 }
 
 .footer__subscribe {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 15px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
 
-    &-info {
-        margin-right: auto;
+  &-info {
+    margin-right: auto;
 
-        @media (max-width: $breakpoint768) {
-            margin: 0 auto;
-        }
+    @media (max-width: $breakpoint768) {
+      margin: 0 auto;
+    }
+  }
+
+  &-title {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  &-description {
+    font-size: 13px;
+    text-align: left;
+
+    @media (max-width: $breakpoint768) {
+      text-align: center;
+    }
+  }
+
+  &-form {
+    position: relative;
+    max-width: 458px;
+    width: 100%;
+    max-height: 52px;
+
+    @media (max-width: $breakpoint1024) {
+      max-width: 300px;
     }
 
-    &-title {
-        margin-bottom: 20px;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-
+    @media (max-width: $breakpoint768) {
+      max-width: 458px;
+      margin: 0 auto;
     }
 
-    &-description {
-        font-size: 13px;
-        text-align: left;
+    & input {
+      width: 100%;
+      height: 100%;
+      padding: 20px;
+      font-family: $fontSecondary, $fontMain;
+      color: $blackColor;
+      border-radius: 12px;
+      transition: 0.5s ease;
 
-        @media (max-width: $breakpoint768) {
-            text-align: center;
-        }
+      &:focus {
+        color: $whiteColor;
+        background: $blackColor;
+        transition: 0.5s ease;
+      }
     }
+  }
 
-    &-form {
-        position: relative;
-        max-width: 458px;
-        width: 100%;
-        max-height: 52px;
+  & button {
+    position: absolute;
+    top: 5px;
+    right: 6px;
+    padding: 10px;
+    font-family: $fontSecondary, $fontMain;
+    color: $blackColor;
+    background: $whiteColor;
+    border: 1px solid #fff;
+    border-radius: 11px;
+    text-transform: uppercase;
+    transition: 0.8s ease;
 
-        @media (max-width: $breakpoint1024) {
-            max-width: 300px;
-        }
-
-        @media (max-width: $breakpoint768) {
-            max-width: 458px;
-            margin: 0 auto;
-        }
-
-        & input {
-            width: 100%;
-            height: 100%;
-            font-family: $fontSecondary, $fontMain;
-            color: $blackColor;
-            padding: 20px;
-            border-radius: 12px;
-            transition: .5s ease;
-
-            &:focus {
-                background: $blackColor;
-                color: $whiteColor;
-                transition: .5s ease;
-            }
-        }
+    &:hover {
+      color: $grayColor;
+      background: $blackColor;
+      border: 1px solid $whiteColor;
+      transition: 0.8s ease;
     }
-
-    & button {
-        position: absolute;
-        top: 5px;
-        right: 6px;
-        padding: 10px;
-        font-family: $fontSecondary, $fontMain;
-        color: $blackColor;
-        background: $whiteColor;
-        border: 1px solid #fff;
-        border-radius: 11px;
-        text-transform: uppercase;
-        transition: .8s ease;
-
-        &:hover {
-            color: $grayColor;
-            background: $blackColor;
-            border: 1px solid $whiteColor;
-            transition: .8s ease;
-        }
-    }
+  }
 }
 
 .footer__copyright {
-    margin-top: 25px;
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: $breakpoint768) {
+    flex-direction: column-reverse;
+  }
+
+  &-text {
+    @media (max-width: $breakpoint480) {
+      font-size: 14px;
+    }
+  }
+
+  &-items {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    gap: 15px;
 
-    @media(max-width: $breakpoint768) {
-        flex-direction: column-reverse;
+    @media (max-width: $breakpoint768) {
+      margin-bottom: 15px;
+      gap: 30px;
     }
 
-    &-text{
-        @media (max-width: $breakpoint480) {
-            font-size: 14px;
-        }
+    span {
+      font-size: 24px;
+      color: $grayColor;
+      transition: 0.5s ease;
+
+      &:hover {
+        color: $whiteColor;
+        transition: 0.5s ease;
+      }
     }
-
-    &-items {
-        display: flex;
-        justify-content: space-between;
-        gap: 15px;
-
-        @media(max-width: $breakpoint768) {
-            margin-bottom: 15px;
-            gap: 30px;
-        }
-
-        span {
-            font-size: 24px;
-            color: $grayColor;
-            transition: .5s ease;
-
-            &:hover {
-                color: $whiteColor;
-                transition: .5s ease;
-            }
-        }
-    }
+  }
 }

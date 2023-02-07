@@ -1,5 +1,5 @@
 // Container & Breakpoints
-@use 'sass:math';
+@use "sass:math";
 $containerWidth: 1200;
 $containerPadding: 40;
 $containerSidePadding: math.div($containerPadding, 2);
@@ -21,10 +21,10 @@ $burgerActiveColor: #fff;
 
 // Fonts
 $fontMain: sans-serif;
-$fontSecondary: 'Poppins';
+$fontSecondary: "Poppins";
 
 // Custom Colors
 $headerColor: #181818;
 $blackColor: #000000;
-$whiteColor: #FFFFFF;
-$grayColor: #C0C0C0;
+$whiteColor: #ffffff;
+$grayColor: #c0c0c0;

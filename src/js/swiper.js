@@ -1,13 +1,7 @@
-const swiper = new Swiper('.swiper-container', {
+const swiper = new Swiper(".swiper-container", {
   // Optional parameters
-  direction: 'horizontal',
+  direction: "horizontal",
   loop: true,
-
-  // Navigation arrows
-  // navigation: {
-  //   nextEl: '.swiper-button-next',
-  //   prevEl: '.swiper-button-prev',
-  // },
 
   // Count preview slides
   slidesPerView: 5,
@@ -44,15 +38,17 @@ const swiper = new Swiper('.swiper-container', {
     0: {
       slidesPerView: 1,
       spaceBetween: 125,
-      // centeredSlides: true,
-    }, 640: {
+    },
+    640: {
       slidesPerView: 2,
       spaceBetween: 150,
       centeredSlides: false,
-    }, 768: {
+    },
+    768: {
       slidesPerView: 3,
       spaceBetween: 150,
-    }, 1024: {
+    },
+    1024: {
       slidesPerView: 4,
       spaceBetween: 150,
       centeredSlides: false,
@@ -62,25 +58,12 @@ const swiper = new Swiper('.swiper-container', {
       spaceBetween: 150,
     },
 
-    // Stop autoplay, when mouse on slider
-    // on: {
-    //   init() {
-    //     this.el.addEventListener('mouseenter', () => {
-    //       this.autoplay.stop();
-    //     });
-
-    //     this.el.addEventListener('mouseleave', () => {
-    //       this.autoplay.start();
-    //     });
-    //   },
-    // },
-
     // Accessibility
     a11y: {
       enabled: true,
-      prevSlideMessage: 'Попередній слайд',
-      nextSlideMessage: 'Наступний слайд',
-      notificationClass: 'swiper-notification',
+      prevSlideMessage: "Попередній слайд",
+      nextSlideMessage: "Наступний слайд",
+      notificationClass: "swiper-notification",
     },
   },
 });

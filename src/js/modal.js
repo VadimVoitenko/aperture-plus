@@ -1,4 +1,4 @@
-// Модальное окно
+// Modal window
 function bindModal(trigger, modal, close) {
   (trigger = document.querySelector(trigger)),
     (modal = document.querySelector(modal)),

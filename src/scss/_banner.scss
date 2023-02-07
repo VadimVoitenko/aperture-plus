@@ -1,10 +1,10 @@
 // Banner Section
 .banner {
-  position: relative;
-  height: 100vh;
-  background-image: url(../img/banner.webp);
-  background-position: center;
-  background-size: cover;
+    position: relative;
+    height: 100vh;
+    background-image: url(./img/banner.webp);
+    background-position: center;
+    background-size: cover;
 
   &__content {
     position: absolute;

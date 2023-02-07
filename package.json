@@ -4,12 +4,14 @@
   "description": "",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "homepage": "https://https://vadimvoitenko.github.io/AperturePlus/",
   "dependencies": {
+    "gh-pages": "^5.0.0",
     "gulp": "^4.0.2"
   },
   "devDependencies": {

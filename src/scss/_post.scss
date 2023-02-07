@@ -76,9 +76,6 @@
         right: 40px;
         display: flex;
         gap: 30px;
-        // width: 95%;
-        // text-align: right;
-        // padding: 0 40px;
 
         @media (max-width: $breakpoint768) {
             bottom: 20px;
@@ -86,19 +83,9 @@
             transform: translateX(50%);
         }
 
-        // @media (max-width: $breakpoint480) {
-        //     display: none;
-        // }
-
         .composition__item {
-            // display: inline-block;
             display: inline-flex;
             gap: 5px;
-
-            // &-icon {
-            //     margin-right: 49px;
-            //     padding-right: 22px;
-            // }
         }
     }
 }

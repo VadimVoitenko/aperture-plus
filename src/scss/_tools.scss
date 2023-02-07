@@ -15,8 +15,6 @@
         }
 
         &-info {
-            // padding: 173px 106px 153px 100px;
-            // background: $blackColor;
             position: relative;
             left: 50%;
             display: flex;
@@ -39,25 +37,6 @@
             @media (max-width: $breakpoint380) {
                 margin: 50px 0;
             }
-
-            // & span {
-            //     margin-bottom: 6px;
-            //     display: block;
-            //     font-size: 14px;
-            //     letter-spacing: 2px;
-            //     line-height: 20px;
-            //     text-transform: uppercase;
-            //     transition: 1s;
-            // }
-
-            // a:hover {
-            //     background: $blackColor;
-
-            //     span {
-            //         color: $whiteColor;
-            //         transition: 1s;
-            //     }
-            // }
 
             .btn-tools {
                 position: relative;

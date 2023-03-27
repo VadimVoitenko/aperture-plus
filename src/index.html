@@ -1,56 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Aperture Studios">
-    <meta name="keywords" content="Photographer, Filmmaker">
-    <meta name="author" content="Developed by Vadim Voitenko">
-    <meta name="theme-color" content="#fff">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Aperture Studios" />
+    <meta name="keywords" content="Photographer, Filmmaker" />
+    <meta name="author" content="Developed by Vadim Voitenko" />
+    <meta name="theme-color" content="#fff" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aperture+</title>
-    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="stylesheet" href="./css/style.min.css" />
 
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+    />
 
     <!-- RemixIcon -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+    />
 
     <!-- AOS Library -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 
     <!-- Touch Icons - iOS and Android 2.1+ 180x180 pixels in size. -->
-    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+    <link
+      rel="apple-touch-icon-precomposed"
+      href="apple-touch-icon-precomposed.png"
+    />
 
     <!-- Firefox, Chrome, Safari, IE 11+ and Opera. 196x196 pixels in size. -->
-    <link rel="icon" href="./img/icon-site.svg" type="image/svg">
-</head>
+    <link rel="icon" href="./img/icon-site.svg" type="image/svg" />
+  </head>
 
-<body class="main__body">
+  <body class="main__body">
     <!-- Header -->
     @@include('./html/_header.html')
     <!-- Banner Section -->
     @@include('./html/_banner.html')
     <!-- Main Page -->
     <main>
-        <!-- Gallery Section -->
-        @@include('./html/_gallery.html')
-        <!-- First Post Section -->
-        @@include('./html/_post-1.html')
-        <!-- Tools Section -->
-        @@include('./html/_tools.html')
-        <!-- Second Post Section -->
-        @@include('./html/_post-2.html')
-        <!-- Clients Section -->
-        @@include('./html/_clients.html')
-        <!-- Third Post Section -->
-        @@include('./html/_post-3.html')
-        <!-- Service Section -->
-        @@include('./html/_service.html')
+      <!-- Gallery Section -->
+      @@include('./html/_gallery.html')
+      <!-- First Post Section -->
+      @@include('./html/_post-1.html')
+      <!-- Tools Section -->
+      @@include('./html/_tools.html')
+      <!-- Second Post Section -->
+      @@include('./html/_post-2.html')
+      <!-- Clients Section -->
+      @@include('./html/_clients.html')
+      <!-- Third Post Section -->
+      @@include('./html/_post-3.html')
+      <!-- Service Section -->
+      @@include('./html/_service.html')
     </main>
     <!-- Footer -->
     @@include('./html/_footer.html')
@@ -60,14 +68,13 @@
     <!-- AOS Library -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init({
-            once: true,
-            disable: function () {
-                var maxWidth = 1040;
-                return window.innerWidth < maxWidth;
-            }
-        });
+      AOS.init({
+        once: true,
+        disable: function () {
+          var maxWidth = 1040;
+          return window.innerWidth < maxWidth;
+        },
+      });
     </script>
-</body>
-
+  </body>
 </html>

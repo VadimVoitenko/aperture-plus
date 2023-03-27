@@ -1,3 +1,5 @@
+const { async } = require('q');
+
 let project_folder = 'build';
 let source_folder = 'src';
 
@@ -37,27 +39,7 @@ let { src, dest } = require('gulp'),
   clean_css = require('gulp-clean-css'),
   rename = require('gulp-rename'),
   uglify = require('gulp-uglify-es').default,
-  imagemin = require('gulp-imagemin'),
-  ghPages = require('gulp-gh-pages');
-
-//Deploy
-const paths = {
-  scripts: {
-    src: './',
-    dest: './build',
-  },
-};
-async function buildHtml() {
-  gulp.src(['*.html']).pipe(gulp.dest(paths.scripts.dest));
-}
-
-exports.default = async function () {
-  buildHtml();
-};
-
-gulp.task('deploy', function () {
-  return gulp.src('./build/**/*').pipe(ghPages());
-});
+  imagemin = require('gulp-imagemin');
 
 // Browser Sync
 function browserSync(params) {
